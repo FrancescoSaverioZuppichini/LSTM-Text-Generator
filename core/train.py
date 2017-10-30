@@ -21,7 +21,7 @@ MAX_ITER = 50000
 N_TEXT = 30
 
 chunk_size = 1
-
+print(n_output)
 r.init_batch(n_input, n_target)
 
 sess = tf.InteractiveSession()

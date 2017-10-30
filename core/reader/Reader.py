@@ -61,13 +61,13 @@ class Reader():
             p = randint(0, len(self.data) - i - t)
 
         lower = p + i
-        upper = lower + t
+        upper = p + 1 + t
 
-        if lower >= len(self.data):
-            return (None, None)
+        if upper >= len(self.data):
+            # go back
+            self.pointer['prev'] = 0
 
-
-        inputs, targets = ( self.data[p: lower], self.data[lower: upper] )
+        inputs, targets = ( self.data[p: lower], self.data[p + 1: upper] )
 
         self.pointer['prev'] = self.pointer['prev'] + s
 
@@ -78,19 +78,19 @@ class Reader():
 # little test
 #
 # r = Reader()
-# r.read('../gesu_2.txt',encode_words=True)
-# # print(r.decode(1))
-# # print(r.encode('the'))
-# # print(r.get_unique_words())
-# r.init_batch(3,1)
-# # print(r.next(random=True))
-# # #
-# # # text = ""
-# # #
+# r.read('../gesu_2.txt',encode_words=False)
+# # # # # print(r.decode(1))
+# # # # # print(r.encode('the'))
+# # # # # print(r.get_unique_words())
+# r.init_batch(3,3)
+# # # # # print(r.next(random=True))
+# # # # # #
+# # # # # # text = ""
+# # # # #
 # for _ in range(20):
 #     (i,t) = r.next()
-#     if(i == None):
-#         break
-# #     print('---------------')
-#     print(i)
-#     print(t)
+# # #     if(i == None):
+# # #         break
+# # # #     print('---------------')
+#     print(i,t)
+#     print(len(i), len(t))
