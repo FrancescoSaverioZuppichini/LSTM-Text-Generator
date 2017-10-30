@@ -17,7 +17,7 @@ n_hidden = 516
 n_input = 4
 n_target = 1
 
-MAX_ITER = 50000
+MAX_ITER = 200
 N_TEXT = 30
 
 chunk_size = 1

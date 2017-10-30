@@ -1,4 +1,4 @@
-import nltk
+# import nltk
 from random import randint
 
 class Reader():
@@ -21,8 +21,8 @@ class Reader():
             self.create_data_set(words, encode_words)
 
     def create_data_set(self, words, encode_words):
-        if(encode_words):
-            words = nltk.word_tokenize(words)
+        # if(encode_words):
+            # words = nltk.word_tokenize(words)
 
         self.data = words
         # little trick, create a set that will get rid of duplicated
@@ -47,50 +47,67 @@ class Reader():
         self.pointer['prev'] = 0
         self.pointer['step'] = step
 
-
         if(random):
             self.pointer['prev'] = randint(0, len(self.data) - input - target - 1)
 
-    def next(self, random=False):
+    def compute_lower_upper(self, random=False, init=False):
         p = self.pointer['prev']
         i = self.pointer['input']
         t = self.pointer['target']
-        s = self.pointer['step']
 
-        if(random):
-            p = randint(0, len(self.data) - i - t)
+        if(init):
+            p = self.pointer['prev'] = 0
+        if (random):
+            self.pointer['prev'] = randint(0, len(self.data) - i - t)
 
         lower = p + i
         upper = p + 1 + t
 
-        if upper >= len(self.data):
-            # go back
-            self.pointer['prev'] = 0
+        return p,lower, upper
 
-        inputs, targets = ( self.data[p: lower], self.data[p + 1: upper] )
+    def next(self):
+        p = self.pointer['prev']
 
-        self.pointer['prev'] = self.pointer['prev'] + s
+        if p + self.pointer['input'] + 1 >= len(self.data):
+            p = self.pointer['prev'] = 0
+
+        upper = p + self.pointer['input'] + 1
+
+        raw = self.data[p:upper]
+
+        inputs, targets = raw[:len(raw) - 1], raw[1:]
+
+        self.pointer['prev'] = p + upper
 
         return inputs, targets
+
+
+    # def next(self, random=False):
+    #
+    #     p,lower, upper = self.compute_lower_upper()
+    #
+    #     if upper > len(self.data):
+    #         # go back
+    #         print('finish data')
+    #         p, lower, upper = self.compute_lower_upper(init=True,random=random)
+    #
+    #     inputs, targets = ( self.data[p: lower], self.data[p + 1: upper] )
+    #
+    #     self.pointer['prev'] = self.pointer['prev'] + self.pointer['step']
+    #
+    #     return inputs, targets
 
     def get_unique_words(self):
         return len(self.data_set.keys())
 # little test
-#
-# r = Reader()
-# r.read('../gesu_2.txt',encode_words=False)
-# # # # # print(r.decode(1))
-# # # # # print(r.encode('the'))
-# # # # # print(r.get_unique_words())
-# r.init_batch(3,3)
-# # # # # print(r.next(random=True))
-# # # # # #
-# # # # # # text = ""
-# # # # #
-# for _ in range(20):
-#     (i,t) = r.next()
-# # #     if(i == None):
-# # #         break
-# # # #     print('---------------')
-#     print(i,t)
-#     print(len(i), len(t))
+
+r = Reader()
+r.read('../gesu_2.txt',encode_words=False)
+# #
+r.init_batch(3,3,step=3)
+# #
+for _ in range(20):
+    (i,t) = r.next()
+# #
+    print(i,t)
+    # print(len(i), len(t))
