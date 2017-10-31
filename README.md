@@ -1,1 +1,1 @@
-# Assignment2
+# LSTM Text Generator
