@@ -51,15 +51,16 @@ total_acc = 0
 
 n_batches = len(r.data)//(batch_size * n_timesteps)
 
-epochs = 60
+epochs = 30
+start_time = time.clock()
 
 print('-------------')
 print("Starting, {} epochs.".format(epochs))
 print("Data size {}".format(len(r.data)))
 print("N classes {}".format(n_classes))
 print("N batches {}".format(n_batches))
+print('Start at {}'.format(start_time))
 
-start_time = time.clock()
 X,Y = r.create_training_set()
 
 for n in range(epochs):
@@ -70,19 +71,15 @@ for n in range(epochs):
             x_hot = tf.one_hot(x_batch, depth=n_classes, on_value=1.0)
             y_hot = tf.one_hot(y_batch, depth=n_classes, on_value=1.0)
 
-            sess.run([ train_step ], feed_dict={x: x_hot.eval(), y: y_hot.eval()})
+            _, loss, acc = sess.run([ train_step, cost, accuracy ], feed_dict={x: x_hot.eval(), y: y_hot.eval()})
 
+            total_loss += loss
+            total_acc += acc
 
-        loss, acc = sess.run([cost, accuracy ], feed_dict={x: X, y: Y})
-
-        total_loss += loss
-        total_acc += acc
-
-        # if(n % 10 == 0 and n > 0):
         print('--------')
         print('Iterations: {}'.format(n))
-        print('AVG Loss: {0:.4f}'.format(total_loss/(10)))
-        print('AVG Acc: {0:.4f}'.format(total_acc/(10)))
+        print('AVG Loss: {0:.4f}'.format(total_loss/(len(X)//batch_size)))
+        print('AVG Acc: {0:.4f}'.format(total_acc/(len(X)//batch_size)))
         # print('Iter per second: {0:.4f}'.format(time.clock() - start_time_inner / 10/1000))
         # start_time_inner = time.clock()
 
@@ -111,6 +108,6 @@ total_time = finish_time - start_time
 
 print('----------')
 print('Finish After: {0:.4f}s'.format(total_time))
-print('Iterations per second: {0:.4f}'.format(total_time/n))
+print('Iterations per second: {0:.4f}'.format(total_time/epochs))
 
 exit(1)

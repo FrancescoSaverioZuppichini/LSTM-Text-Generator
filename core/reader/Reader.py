@@ -8,7 +8,7 @@ class Reader():
         self.data_set = {}
         self.data_set_inv = {}
         self.data = []
-        # self.pointer = {'input': 0, 'target':0, 'prev':0 , 'step': 0}
+
         self.sequence_len = sequence_len
         self.batch_size = batch_size
         self.training = {'X' : [], 'Y' :[]}
@@ -67,42 +67,11 @@ class Reader():
     def encode(self,word):
         return self.data_set_inv[word]
 
-    # def init_batch(self,input,target, random=False, batch_size=1):
-    #
-    #     if(input > len(self.data)):
-    #         raise Exception('Input size cannot be larger than the data set.')
-    #
-    #     self.pointer['input'] = input
-    #     self.pointer['target'] = target
-    #     self.pointer['prev'] = 0
-    #     self.pointer['step'] = step
-    #
-    #     if(random):
-    #         self.pointer['prev'] = randint(0, len(self.data) - input - target - 1)
-    #
-    #     self.create_training_set()
-
     def next(self, p):
         X = self.training['X']
         Y = self.training['Y']
 
         return X[p: p + self.batch_size], Y[p : p + self.batch_size]
-    # def next(self):
-    #     p = self.pointer['prev']
-    #
-    #     if p + self.pointer['input'] + 1 >= len(self.data):
-    #         print('read dataset')
-    #         p = self.pointer['prev'] = 0
-    #
-    #     upper = p + self.pointer['input'] + 1
-    #
-    #     raw = self.data_encoded[p:upper]
-    #
-    #     inputs, targets = raw[:len(raw) - 1], raw[1:]
-    #
-    #     self.pointer['prev'] = p +  self.pointer['input'] + 1
-    #
-    #     return inputs, targets
 
     def get_unique_words(self):
         return len(self.data_set.keys())
@@ -112,7 +81,9 @@ class Reader():
 # r.read('../gesu_2.txt',encode_words=False)
 # # # #
 # X, Y = r.create_training_set()
-# print(''.join(r.decode_array(X[2])))
+# print(''.join(r.decode_array(X[0])))
+# print(''.join(r.decode_array(Y[0])))
+
 # print(X.shape)
 # print(len(r.data))
 # for _ in range(10):
