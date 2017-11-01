@@ -1,142 +1,141 @@
 from model import model
 from reader import Reader
 import tensorflow as tf
-import matplotlib.pyplot as plt
-
+import itertools, sys
 import numpy as np
+import time
+# from colorama import Fore, Back, Style
+import sys
 
-FILE_NAME = './story.txt'
 
-r = Reader.Reader()
-r.read(FILE_NAME,encode_words=True)
-# r.read(FILE_NAME)
+# import matplotlib.pyplot as plt
 
-n_output = r.get_unique_words()
-n_hidden = 516
+# FILE_NAME = './dio.txt'
+FILE_NAME = './data/shakespeare'
 
-n_input = 4
-n_target = 1
+CHECK_POINT = False
 
-MAX_ITER = 200
-N_TEXT = 30
+# variables
+batch_size = 128
+# sequence len
+n_timesteps = 100
+n_target = 100
+n_input = n_target
+# size of each rnn
+n_rnn = [256, 256]
+n_layers = 1
 
-chunk_size = 1
-print(n_output)
-r.init_batch(n_input, n_target)
+learning_rate = 0.001
+
+r = Reader.Reader(batch_size=batch_size, sequence_len=n_timesteps)
+r.read_from_dir(FILE_NAME)
+# r.read(FILE_NAME,encode_words=False)
+n_classes = r.get_unique_words()
+
+x = tf.placeholder(tf.float32, [batch_size, n_timesteps, n_classes])
+y = tf.placeholder(tf.float32,[batch_size, n_timesteps, n_classes])
+
 
 sess = tf.InteractiveSession()
 
-x = tf.placeholder("float", [None, n_input, chunk_size])
-y = tf.placeholder("float", [None, n_output])
+pred, cost, train_step, accuracy, correct_pred = model.RNN(x, y, n_timesteps, n_rnn, n_classes, batch_size)
 
-pred, cost, train_step, accuracy = model.RNN(x, y, n_input, n_hidden, n_output)
-
-print('------------')
-print('Using: {}'.format(FILE_NAME))
-print('Unique words: {}'.format(n_output))
-print('\n')
+sess.run(tf.global_variables_initializer())
 
 saver = tf.train.Saver()
 
-saver.restore(sess, "/tmp/model.ckpt")
-#
-# sess.run(tf.global_variables_initializer())
-
-
 losses = []
+accuracies = []
 
 total_loss = 0
 total_acc = 0
 
-n_batches = len(r.data)//n_input
+n_batches = len(r.data)//(batch_size * n_timesteps)
 
-for n in range(0):
+epochs = 20
 
-    inputs,targets = r.next()
+start_time = time.clock()
 
-    if (inputs == None):
-        r.init_batch(n_input, n_target,random=False)
-        inputs, targets = r.next()
+print('-------+-------')
+print("{}".format(FILE_NAME))
+print("Data size: {:^8}".format(len(r.data)))
+print("N classes: {:^8}".format(n_classes))
+print("batch size: {:^8}".format(batch_size))
+print("N batches: {:^8}".format(n_batches))
+print('-------+-------')
+print("N epochs: {:^8}".format(epochs))
+print('Start at: {:^8}'.format(time.strftime("%H:%M:%S")))
 
-    X = np.array([r.encode(input) for input in inputs])
+X,Y = r.create_training_set()
 
-    X = np.reshape(X, [-1,n_input,1])
+writer = tf.summary.FileWriter("output", sess.graph)
 
-    Y = np.zeros([n_output], dtype=float)
-    Y[r.encode(targets[0])] = 1.0
+tf.summary.scalar("loss", cost)
+write_op = tf.summary.merge_all()
 
-    Y = np.reshape(Y, [1, -1])
+try:
+    for n in range(epochs):
+            for i in range(len(X)//batch_size):
+                x_batch,y_batch = r.next(i)
 
-    output, loss, acc = sess.run([ train_step, cost, accuracy] ,feed_dict={x: X, y: Y})
+                x_hot = tf.one_hot(x_batch, depth=n_classes, on_value=1.0)
+                y_hot = tf.one_hot(y_batch, depth=n_classes, on_value=1.0)
 
-    losses.append(loss)
+                _, loss, acc = sess.run([ train_step, cost, accuracy ], feed_dict={x: x_hot.eval(), y: y_hot.eval()})
 
-    total_loss += loss
-    total_acc += acc
+                print('Done batch {}'.format(i))
+                print('Iter: {}'.format(i * (n +1)))
+                print('Cost: {}'.format(loss))
+                # summary = sess.run(write_op, {cost: loss})
+                # writer.add_summary(summary, i * (n +1) )
+                # writer.flush()
 
-    # if(n % 100):
-    #     out = sess.run(pred, feed_dict={x: X, y: Y})
-    #     out = r.decode(int(tf.argmax(out, 1).eval()))
-    #     print("{}, {} - {}".format(inputs, out, targets))
+                total_loss += loss
+                total_acc += acc
 
-    if(n % 1000 == 0 and n > 0):
+            print('--------')
+            print('Epoch: {}'.format(n))
+            # print('AVG Loss:' + Fore.RED + ' {0:.4f}'.format(total_loss/(len(X)//batch_size)) + Fore.RESET)
+            print('AVG Loss:  {0:.4f}'.format(total_loss/(len(X)//batch_size)))
+            print('AVG Acc: {0:.4f}'.format(total_acc/(len(X)//batch_size)))
 
-        out = sess.run(pred,feed_dict={x: X, y: Y})
-        out =  r.decode(int(tf.argmax(out, 1).eval()))
+            total_loss = 0
+            total_acc = 0
 
-        print('--------')
-        print('Iterations: {}'.format(n))
-        print('AVG Loss: {}'.format(total_loss/(1000 )))
-        print('AVG Acc: {}'.format(total_acc/(1000 )))
-        # print("{}, {} - {}".format(inputs, out, targets))
+            if(CHECK_POINT):
+                save_path = saver.save(sess, "/tmp/model-{}.ckpt".format(time.strftime("%H:%M:%S")))
+                print("Model saved in file: %s" % save_path)
 
-        # if(total_loss < 0.001):
-        #     break
-        total_loss = 0
-        total_acc = 0
+except KeyboardInterrupt:
+    pass
 
-    # if(n % 100 == 0):
-    #     # if (total_loss < 0.001):
-    #     #     break
-    #     print('Read dataset {} times'.format(n))
-            # if(n % 1000 == 0):
-        #     print('Iterations: {}'.format(n))
+writer.close()
+x_batch,y_batch = r.next(0)
 
-            # print("{}, {} - {}".format(inputs, out, targets))
+x_hot = tf.one_hot(x_batch, depth=n_classes, on_value=1.0)
+
+for i in range(3):
+
+    preds = sess.run(pred, feed_dict={x: x_hot.eval()})
+
+    keys = np.argmax(preds, axis=1)
+
+    print(''.join(r.decode_array(keys)))
+    print('GENERATO FINO A QUI')
+    preds = keys.reshape([batch_size, n_timesteps])
+    x_hot = tf.one_hot(preds, depth=n_classes, on_value=1.0)
 
 save_path = saver.save(sess, "/tmp/model.ckpt")
-
 print("Model saved in file: %s" % save_path)
 
-inputs,targets = r.next(random=True)
+N_TEXT = 100
 
-keys = [r.encode(input) for input in inputs]
+finish_time = time.clock()
 
-X = np.reshape(np.array(keys), [-1, n_input, 1])
+total_time = finish_time - start_time
 
-Y = np.zeros([n_output], dtype=float)
-Y[r.encode(targets[0])] = 1.0
+print('----------')
+print('Finish After: {0:.4f}s'.format(total_time))
+print('Iterations per second: {0:.4f}'.format(total_time/epochs))
 
-Y = np.reshape(Y, [1, -1])
-
-text = inputs
-
-for _ in range(N_TEXT):
-    # print(keys)
-    onehot_pred = sess.run(pred, feed_dict={x: X})
-    onehot_pred_index = int(tf.argmax(onehot_pred, 1).eval())
-    pred_word = r.decode(onehot_pred_index)
-
-    inputs.append(pred_word)
-    # text+= pred_word
-    keys[0] = keys[1]
-    keys[1] = keys[2]
-    keys[2] = r.encode(pred_word)
-
-    X =  np.reshape(np.array(keys), [-1, n_input, 1])
-
-print(" ".join(text))
-# print(text)
-# losses = np.mean(np.array(losses).reshape(-1, 10), 1)
-# plt.plot(losses)
-# plt.show()
+exit(1)

@@ -1,6 +1,7 @@
 # import nltk
 from random import randint
 import numpy as np
+import os
 
 class Reader():
 
@@ -8,25 +9,46 @@ class Reader():
         self.data_set = {}
         self.data_set_inv = {}
         self.data = []
-
         self.sequence_len = sequence_len
         self.batch_size = batch_size
         self.training = {'X' : [], 'Y' :[]}
 
-    def read(self, path, encode_words=False):
+    def read_from_dir(self, path):
         """
-        Read and store the words from a given file
+        Read and store each file from a given directory
+        :param path: Path to the directory with the files
+        :return:
+        """
+        files = [file for file in os.listdir(path) if file.endswith(".txt")]
+
+        words = ""
+        for file in files:
+            words += self.read_file(path + '/' + file)
+
+        self.create_data_set(words)
+
+    def read_file(self, path):
+        """
+        Read and return the words from a given file
         :param path: Path to the file we want to read
         :return:
         """
         with open(path,'r',encoding='utf8') as file:
             words = file.read()
 
-            self.create_data_set(words, encode_words)
+        print('Read {}'.format(os.path.basename(path)))
 
-    def create_data_set(self, words, encode_words):
-        # if(encode_words):
-            # words = nltk.word_tokenize(words)
+        return words
+    def read(self, path):
+        """
+        Read and store the words from a given file
+        :param path: Path to the file we want to read
+        :return:
+        """
+        words = self.read_file(path)
+        self.create_data_set(words)
+
+    def create_data_set(self, words):
 
         self.data = words
         # little trick, create a set that will get rid of duplicated
@@ -35,7 +57,7 @@ class Reader():
         self.data_set = {k: v for k,v in enumerate(unique_chars)}
         self.data_set_inv = {k: v for v,k in enumerate(unique_chars)}
 
-        self.data_encoded = [self.encode(char) for char in self.data]
+        self.data_encoded = [self.encode(char) for char in words]
 
     def create_set(self, data, start, end, step):
         len_data = len(self.data)
@@ -75,9 +97,16 @@ class Reader():
 
     def get_unique_words(self):
         return len(self.data_set.keys())
+
+    def print_info(self):
+        print('Data size: {}'.format(len(self.data)))
+        print('Uniques symbols: {}'.format(self.get_unique_words()))
+
 # little test
 # #
 # r = Reader(sequence_len=5,batch_size=2)
+# r.read_from_dir('../data/shakespeare')
+# print(r.print_info())
 # r.read('../gesu_2.txt',encode_words=False)
 # # # #
 # X, Y = r.create_training_set()
