@@ -13,6 +13,16 @@ class Reader():
         self.batch_size = batch_size
         self.training = {'X' : [], 'Y' :[]}
 
+
+    def load(self, path):
+
+        isFile = os.path.isfile(path)
+
+        if(isFile):
+            self.read_file(path)
+        else:
+            self.read_from_dir(path)
+
     def read_from_dir(self, path):
         """
         Read and store each file from a given directory
@@ -27,7 +37,7 @@ class Reader():
 
         self.create_data_set(words)
 
-    def read_file(self, path):
+    def read(self, path):
         """
         Read and return the words from a given file
         :param path: Path to the file we want to read
@@ -39,13 +49,13 @@ class Reader():
         print('Read {}'.format(os.path.basename(path)))
 
         return words
-    def read(self, path):
+    def read_file(self, path):
         """
         Read and store the words from a given file
         :param path: Path to the file we want to read
         :return:
         """
-        words = self.read_file(path)
+        words = self.read(path)
         self.create_data_set(words)
 
     def create_data_set(self, words):
@@ -80,8 +90,10 @@ class Reader():
         return X, Y
 
     def decode_array(self, array):
-
         return [self.decode(index) for index in array]
+
+    def encode_array(self, array):
+        return [self.encode(index) for index in array]
 
     def decode(self,index):
         return self.data_set[index]
