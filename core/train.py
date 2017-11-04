@@ -20,7 +20,8 @@ tf.set_random_seed(0)
 CHECK_POINT = False
 TENSORBOARD = args.tensorboard
 VALIDATION = True
-
+START = time.strftime("%H:%M:%S")
+OUTPUT_FILE = "output-{}.txt".format(START)
 # variables
 batch_size = args.batch_size
 # sequence len
@@ -60,24 +61,21 @@ n_batches = len(r.data)//(batch_size * sequence_len)
 
 epochs = args.epochs
 
-start_time = time.clock()
-
-print('-------+-------')
-print('================')
-print(args.layers)
-print("Sequence len: {:^8}".format(sequence_len))
-print("Learning rate: {:^8}".format(args.eta))
-print("Batch size: {:^8}".format(batch_size))
-print('Dropout: {}'.format(args.dropout))
-print('================')
-print("{}".format(FILE_NAME))
-print("Data size: {:^8}".format(len(r.data)))
-print("N classes: {:^8}".format(n_classes))
-print("N batches: {:^8}".format(n_batches))
-print('-------+-------')
-print("N epochs: {:^8}".format(epochs))
-print('Start at: {:^8}'.format(time.strftime("%H:%M:%S")))
-print('\n')
+model_definition = "================" \
+                   "\n{}" \
+                   "\nSequence len: {:^8}" \
+                   "\nLearning rate: {:^8}" \
+                   "\nBatch size: {:^8}" \
+                   "\nDropout: {}\n" \
+                   "================\n{}\n" \
+                   "Data size: {:^8}\n" \
+                   "N classes: {:^8}\n" \
+                   "N batches: {:^8}\n" \
+                   "N epochs: {:^8}\n" \
+                   "Start at: {:^8}\n".format(args.layers,sequence_len,args.eta,batch_size,
+                                              args.dropout,FILE_NAME,len(r.data),n_classes,
+                                              n_batches,epochs,START)
+print(model_definition)
 
 X,Y = r.create_training_set()
 
@@ -93,25 +91,27 @@ if(VALIDATION):
     X_val_hot = tf.one_hot(X_val, depth=n_classes, on_value=1.0)
     Y_val_hot = tf.one_hot(Y_val, depth=n_classes, on_value=1.0)
 
-
 N_TEXT = 100
+
+open(OUTPUT_FILE, 'w').write(model_definition)
+
 
 sess.run(tf.global_variables_initializer())
 
+start_time = time.clock()
 try:
     for n in range(epochs):
             for i in range(len(X)//batch_size):
                 x_batch,y_batch = r.next(i)
 
-                x_hot = tf.one_hot(x_batch, depth=n_classes, on_value=1.0)
-                y_hot = tf.one_hot(y_batch, depth=n_classes, on_value=1.0)
 
-                _, loss, acc = sess.run([ train_step, cost, accuracy ], feed_dict={x: x_hot.eval(), y: y_hot.eval()})
+                _, loss, acc = sess.run([ train_step, cost, accuracy ], feed_dict={x: x_batch, y: y_batch})
 
                 if(VALIDATION):
-                    _, val_loss = sess.run([pred, cost], feed_dict={x: X_val_hot.eval(),y: Y_val_hot.eval()})
+                    _, val_loss = sess.run([pred, cost], feed_dict={x: x_batch, y: y_batch})
 
                 if(args.verbose):
+                    loss, acc = sess.run([cost, accuracy], feed_dict={x: x_batch, y: y_batch})
                     print('Done batch {}'.format(i))
                     print('Iter: {}'.format(i * (n +1)))
                     print('Loss: {}'.format(loss))
@@ -132,6 +132,7 @@ try:
                 total_loss += loss
                 total_acc += acc
 
+            avg_loss = total_loss/(len(X)//batch_size)
             print('--------')
             print('Epoch: {}'.format(n))
 
@@ -139,15 +140,22 @@ try:
             if(VALIDATION):
                 print('AVG Val Loss:  {0:.4f}'.format(total_val_loss/(len(X)//batch_size)))
             print('AVG Acc: {0:.4f}'.format(total_acc/(len(X)//batch_size)))
+            print(time.strftime("%H:%M:%S"))
+            # preds = sess.run(pred, feed_dict={x: x_batch, y: y_batch})
+            # keys = np.argmax(preds, axis=1)
+            # #
+            # print(''.join(r.decode_array(keys)))
 
-            # model.generate(x,y, 'T', sess, n_classes, r)
+            text = model.generate(x,y, 'T', sess, n_classes, r,50)
+            open(OUTPUT_FILE, 'a').write("\nEpoch: {}\nAVG loss: {}\n{}".format(n,avg_loss,text))
             total_loss = 0
             total_acc = 0
             total_val_loss = 0
 
             if(CHECK_POINT):
-                save_path = saver.save(sess, "/tmp/model-{}.ckpt".format(time.strftime("%H:%M:%S")))
-                print("Model saved in file: %s" % save_path)
+                if(n % 10 == 0):
+                    save_path = saver.save(sess, "/tmp/model-{}.ckpt".format(time.strftime("%H:%M:%S")))
+                    print("Model saved in file: %s" % save_path)
 
 except KeyboardInterrupt:
     pass
@@ -165,8 +173,8 @@ finish_time = time.clock()
 total_time = finish_time - start_time
 
 print('----------')
-print('Finish After: {0:.4f}s'.format(total_time))
+print('Finish after: {0:.4f}s'.format(total_time))
 print('Finish at: {:^8}'.format(time.strftime("%H:%M:%S")))
-print('Iterations per second: {0:.4f}'.format(total_time/epochs))
+print('Epoch per second: {0:.4f}'.format(total_time/epochs))
 
 exit(1)

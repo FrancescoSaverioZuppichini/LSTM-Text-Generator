@@ -1,6 +1,7 @@
 # import nltk
 from random import randint
 import numpy as np
+import tensorflow as tf
 import os
 
 class Reader():
@@ -33,7 +34,7 @@ class Reader():
 
         words = ""
         for file in files:
-            words += self.read_file(path + '/' + file)
+            words += self.read(path + '/' + file)
 
         self.create_data_set(words)
 
@@ -77,13 +78,20 @@ class Reader():
 
         S = S[:len_data//step * step]
 
-        return S.reshape([-1,step])
+        S = S.reshape([-1,step])
+
+        # one hot encode the sequence
+        S = tf.one_hot(S, depth=self.get_unique_words(),on_value=1.0).eval()
+
+        return S
+
 
 
     def create_training_set(self):
         step  = self.sequence_len
 
         X, Y = self.create_set(self.data_encoded, 0, 1, step), self.create_set(self.data_encoded, 1, 0, step)
+
 
         self.training = {'X' : X, 'Y' :Y}
 

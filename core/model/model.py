@@ -6,8 +6,8 @@ class RNN:
 
     def build(self,x, y, layers, n_classes, eta, dropout):
 
-        w = tf.Variable(tf.truncated_norma([layers[-1], n_classes]))
-        b = tf.Variable(tf.truncated_norma([n_classes]))
+        w = tf.Variable(tf.random_normal([layers[-1], n_classes]))
+        b = tf.Variable(tf.random_normal([n_classes]))
 
         if(dropout):
             rnn_cell = rnn.MultiRNNCell([rnn.DropoutWrapper(rnn.BasicLSTMCell(n_size, state_is_tuple=True), 0.5) for n_size in layers], state_is_tuple=True)
@@ -43,7 +43,7 @@ class RNN:
         return pred, cost, train_step, accuracy, correct_pred
 
     def generate(self, x, y, input_val, sess, n_classes, r, n_text=100):
-        text = ''
+        text = input_val
         x_batch = np.array([r.encode_array(list(input_val))])
 
         x_hot = tf.one_hot(x_batch, depth=n_classes, on_value=1.0)
@@ -52,10 +52,11 @@ class RNN:
             preds = sess.run(self.nodes['pred'], feed_dict={x: x_hot.eval()})
             keys = np.argmax(preds, axis=1)
 
-            text += ''.join(r.decode_array(keys))
+            text += "".join(r.decode_array(keys))
 
             preds = keys.reshape([len(x_batch), len(x_batch[0])])
             x_hot = tf.one_hot(preds, depth=n_classes, on_value=1.0)
 
-        open('output.txt', 'w').write(text)
         print(text)
+        return text
+
