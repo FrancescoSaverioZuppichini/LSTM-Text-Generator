@@ -1,1 +1,1 @@
-sbatch --nodelist="icsnode$1" --exclusive ./scripts/main_gpu.sh && ./scripts/squeue_interactive.sh
+sbatch --nodelist="icsnode$1" --exclusive ./scripts/main_gpu.sh && squeue | grep -e "stud62"

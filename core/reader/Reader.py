@@ -122,25 +122,3 @@ class Reader():
         print('Data size: {}'.format(len(self.data)))
         print('Uniques symbols: {}'.format(self.get_unique_words()))
 
-# little test
-# #
-# r = Reader(sequence_len=5,batch_size=2)
-# r.read_from_dir('../data/shakespeare')
-# print(r.print_info())
-# r.read('../gesu_2.txt',encode_words=False)
-# # # #
-# X, Y = r.create_training_set()
-# print(''.join(r.decode_array(X[0])))
-# print(''.join(r.decode_array(Y[0])))
-
-# print(X.shape)
-# print(len(r.data))
-# for _ in range(10):
-#     for i in range(len(X)//2):
-#         print(r.next(i))
-# # #
-# for _ in range(20):
-#     (i,t) = r.next()
-# # #
-#     print(i,t)
-#     # print(len(i), len(t))

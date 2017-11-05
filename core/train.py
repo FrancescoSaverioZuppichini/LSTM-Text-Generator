@@ -6,7 +6,7 @@ import numpy as np
 import time
 # from colorama import Fore, Back, Style
 import sys
-
+import os
 from Parser import args
 
 print(args)
@@ -17,7 +17,7 @@ FILE_NAME = args.file
 
 tf.set_random_seed(0)
 
-CHECK_POINT = False
+CHECK_POINT = args.checkpoint
 TENSORBOARD = args.tensorboard
 VALIDATION = True
 START = time.strftime("%H:%M:%S")
@@ -91,6 +91,10 @@ if(VALIDATION):
     X_val_hot = tf.one_hot(X_val, depth=n_classes, on_value=1.0)
     Y_val_hot = tf.one_hot(Y_val, depth=n_classes, on_value=1.0)
 
+if(CHECK_POINT):
+    DIR_NAME = "./checkpoint-{}".format(START)
+    os.makedirs(DIR_NAME)
+
 N_TEXT = 100
 
 open(OUTPUT_FILE, 'w').write(model_definition)
@@ -115,7 +119,8 @@ try:
                     print('Done batch {}'.format(i))
                     print('Iter: {}'.format(i * (n +1)))
                     print('Loss: {}'.format(loss))
-
+                    # text = model.generate(x, y, 'ACT I', sess, n_classes, r, 25)
+                    # print(text)
                     if(VALIDATION):
                         print('Val Loss: {}'.format(val_loss))
                         total_val_loss += val_loss
@@ -141,20 +146,23 @@ try:
                 print('AVG Val Loss:  {0:.4f}'.format(total_val_loss/(len(X)//batch_size)))
             print('AVG Acc: {0:.4f}'.format(total_acc/(len(X)//batch_size)))
             print(time.strftime("%H:%M:%S"))
-            # preds = sess.run(pred, feed_dict={x: x_batch, y: y_batch})
-            # keys = np.argmax(preds, axis=1)
+            preds = sess.run(pred, feed_dict={x: x_batch, y: y_batch})
+            keys = np.argmax(preds, axis=1)
             # #
-            # print(''.join(r.decode_array(keys)))
-
-            text = model.generate(x,y, 'T', sess, n_classes, r,50)
-            open(OUTPUT_FILE, 'a').write("\nEpoch: {}\nAVG loss: {}\n{}".format(n,avg_loss,text))
+            # pred_text = "".join(r.decode_array(keys)).encode('utf8')
+            # pred_text = pred_text[:50]
+            pred_text  = ""
+            text = model.generate(x, y, 'Il ', sess, n_classes, r, 25)
+            open(OUTPUT_FILE, 'a').write("\nEpoch: {}\nAVG loss: {}\n"
+                                         "=====================\n{}\n"
+                                         "=====================\n{}\n".format(n,avg_loss,pred_text,text))
             total_loss = 0
             total_acc = 0
             total_val_loss = 0
 
             if(CHECK_POINT):
                 if(n % 10 == 0):
-                    save_path = saver.save(sess, "/tmp/model-{}.ckpt".format(time.strftime("%H:%M:%S")))
+                    save_path = saver.save(sess, "{}/model-{}.ckpt".format(DIR_NAME,time.strftime("%H:%M:%S")))
                     print("Model saved in file: %s" % save_path)
 
 except KeyboardInterrupt:

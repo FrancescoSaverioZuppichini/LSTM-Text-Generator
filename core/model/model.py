@@ -1,46 +1,54 @@
 import tensorflow as tf
 from tensorflow.contrib import rnn
+from tensorflow.contrib import layers
 import numpy as np
 
 class RNN:
 
     def build(self,x, y, layers, n_classes, eta, dropout):
+        shape = x.get_shape().as_list()
 
-        w = tf.Variable(tf.random_normal([layers[-1], n_classes]))
-        b = tf.Variable(tf.random_normal([n_classes]))
+        w = tf.Variable(tf.truncated_normal([layers[-1], shape[-1]]))
+        b = tf.Variable(tf.truncated_normal([shape[-1]]))
+
+        cells = [rnn.BasicLSTMCell(n_size) for n_size in layers]
 
         if(dropout):
-            rnn_cell = rnn.MultiRNNCell([rnn.DropoutWrapper(rnn.BasicLSTMCell(n_size, state_is_tuple=True), 0.5) for n_size in layers], state_is_tuple=True)
-        else:
-            rnn_cell = rnn.MultiRNNCell([rnn.BasicLSTMCell(n_size) for n_size in layers], state_is_tuple=True)
+            cells = [rnn.DropoutWrapper(cell,0.8) for cell in cells]
+
+        rnn_cell = rnn.MultiRNNCell(cells, state_is_tuple=True)
 
         initial_state = rnn_cell.zero_state(tf.shape(x)[0], dtype=tf.float32)
 
         outputs, state = tf.nn.dynamic_rnn(rnn_cell, x, initial_state=initial_state ,dtype=tf.float32)
         # reshape by the last layer dimension
-        pack_pred = tf.reshape(outputs, [-1 , layers[-1]])
+        y_flat = tf.reshape(outputs, [-1 , layers[-1]])
 
-        pred = tf.matmul(pack_pred, w) + b
+        y_logits = tf.matmul(y_flat, w) + b
 
-        flat_Y = tf.reshape(y, [-1 , n_classes])
+        y_flat = tf.reshape(y, [-1 , shape[-1]])
 
-        cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=pred, labels=flat_Y))
+        cost = tf.nn.softmax_cross_entropy_with_logits(logits=y_logits, labels=y_flat)
+        cost = tf.reduce_mean(cost)
 
         train_step = tf.train.AdamOptimizer(eta).minimize(cost)
 
-        correct_pred = tf.equal(tf.argmax(pred, 1), tf.argmax(flat_Y, 1))
+        correct_pred = tf.equal(tf.argmax(y_logits, 1), tf.argmax(y_flat, 1))
+
 
         accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
 
+        predictions = tf.nn.softmax(y_logits)
+
         self.nodes = {
-            'pred': pred,
+            'pred': predictions,
             'cost': cost,
             'train': train_step,
             'accuracy': accuracy,
             'correct_pred': correct_pred
         }
 
-        return pred, cost, train_step, accuracy, correct_pred
+        return predictions, cost, train_step, accuracy, correct_pred
 
     def generate(self, x, y, input_val, sess, n_classes, r, n_text=100):
         text = input_val

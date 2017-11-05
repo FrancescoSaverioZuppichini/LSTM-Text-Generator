@@ -1,0 +1,22 @@
+================
+[128, 128]
+Sequence len:   100   
+Learning rate:   0.01  
+Batch size:    64   
+Dropout: False
+================
+./data/divina_commedia.txt
+Data size:  580756 
+N classes:   105   
+N batches:    90   
+N epochs:   1000  
+Start at: 13:48:42
+
+Epoch: 0
+AVG loss: 3.0517884254455567
+=====================
+
+=====================
+Il 
+
+e   scceeh   scceeh   scceeh   scceeh   scceeh   scceeh   scceeh   scceeh

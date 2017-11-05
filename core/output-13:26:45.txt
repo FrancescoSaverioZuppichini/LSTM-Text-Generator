@@ -1,0 +1,13 @@
+================
+[128, 128]
+Sequence len:    50   
+Learning rate:  0.001  
+Batch size:   200   
+Dropout: False
+================
+./data/test
+Data size: 1560252 
+N classes:    79   
+N batches:   156   
+N epochs:   1000  
+Start at: 13:26:45
