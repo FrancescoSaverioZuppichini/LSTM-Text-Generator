@@ -42,6 +42,7 @@ class RNN:
         return cells
 
     def run_rnn(self):
+
         rnn_layers = self.create_rnn_layers()
 
         self.initial_state = rnn_layers.zero_state(tf.shape(self.x)[0], dtype=tf.float32)
@@ -52,6 +53,7 @@ class RNN:
         return output
 
     def run_linear(self, rnn_output):
+
         shape = self.x.get_shape().as_list()
 
         rnn_output_flat = tf.reshape(rnn_output, [-1, self.layers[-1]])
@@ -71,6 +73,7 @@ class RNN:
 
 
     def get_loss(self, logits):
+
         shape = self.x.get_shape().as_list()
 
         y_flat = tf.reshape(self.y, [-1, shape[-1]])  # [BATCH_SIZE x LEN_SEQ, SYMBOLS]
@@ -87,6 +90,7 @@ class RNN:
         return pred
 
     def get_accuracy(self, logits):
+
         shape = self.x.get_shape().as_list()
 
         y_flat = tf.reshape(self.y, [-1, shape[-1]])  # [BATCH_SIZE x LEN_SEQ, SYMBOLS]
@@ -115,22 +119,23 @@ class RNN:
         return pred, cost, train_step, accuracy
 
     def generate(self, x, y, input_val, sess, n_classes, r, n_text=100):
+
         text = input_val
         x_batch = np.array([r.encode_array(list(input_val))])
 
         x_hot = tf.one_hot(x_batch, depth=n_classes, on_value=1.0)
 
+        last_state = sess.run(self.last_state, feed_dict={self.x: x_hot.eval()})
+
         for i in range(n_text):
 
-            last_state = sess.run(self.last_state, feed_dict={x: x_hot.eval()})
-
-            preds = sess.run(self.pred, feed_dict={x: x_hot.eval(), self.initial_state: last_state})
+            preds = sess.run(self.pred, feed_dict={self.x: x_hot.eval(), self.initial_state: last_state})
             # keys = np.argmax(preds, axis=1)
             keys = preds
             text += "".join(r.decode_array(keys[0]))
 
             preds = keys.reshape([len(x_batch), len(x_batch[0])])
             x_hot = tf.one_hot(preds, depth=n_classes, on_value=1.0)
-
+        print(text)
         return text
 

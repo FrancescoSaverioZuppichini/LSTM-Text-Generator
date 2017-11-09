@@ -94,6 +94,7 @@ last_state = None
 
 try:
     for x_batch, y_batch, epoch in r.create_iter(epochs):
+        text = model.generate(x, y, 'The ', sess, n_classes, r, 500)
 
         x_hot = tf.one_hot(x_batch,depth=n_classes,on_value=1.0).eval()
         y_hot = tf.one_hot(y_batch,depth=n_classes,on_value=1.0).eval()
@@ -101,9 +102,7 @@ try:
         feed_dict = {x: x_hot, y: y_hot}
 
         if(last_state != None):
-            model.initial_state = last_state
-
-            feed_dict[initial_state]= last_state
+            feed_dict[initial_state] = last_state
 
         _, loss, acc, last_state = sess.run([ train_step, cost, accuracy, state ], feed_dict=feed_dict)
 
@@ -122,17 +121,16 @@ try:
             avg_acc = total_acc/n_batches
 
 
-            preds = sess.run(pred, feed_dict={x: x_hot, y: y_hot, initial_state:last_state })
+            preds = sess.run(pred, feed_dict={x: x_hot, y: y_hot, initial_state: last_state })
             keys = np.argmax(preds, axis=1)
 
             pred_text  = ""
-            text = ""
-
+            text = model.generate(x, y, 'The ', sess, n_classes, r, 10)
             logger.log(logger.get_current_train_info(epoch, avg_loss, avg_acc, pred_text, pred))
 
-            if (n / 3 % n_batches == 0):
-                text = model.generate(x, y, 'The ', sess, n_classes, r, 10)
-                logger.log("{}\n".format(text))
+            # if (n / 3 % n_batches == 0):
+            #     text = model.generate(x, y, 'The ', sess, n_classes, r, 10)
+            #     logger.log("{}\n".format(text))
 
             total_loss = 0
             total_acc = 0
