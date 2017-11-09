@@ -94,7 +94,7 @@ last_state = None
 
 try:
     for x_batch, y_batch, epoch in r.create_iter(epochs):
-        text = model.generate(x, y, 'The ', sess, n_classes, r, 500)
+        # text = model.generate(x, y, 'The ', sess, n_classes, r, 500)
 
         x_hot = tf.one_hot(x_batch,depth=n_classes,on_value=1.0).eval()
         y_hot = tf.one_hot(y_batch,depth=n_classes,on_value=1.0).eval()
@@ -125,7 +125,7 @@ try:
             keys = np.argmax(preds, axis=1)
 
             pred_text  = ""
-            text = model.generate(x, y, 'The ', sess, n_classes, r, 10)
+            text = model.generate(x, y, 'The ', sess, n_classes, r, 500)
             logger.log(logger.get_current_train_info(epoch, avg_loss, avg_acc, pred_text, pred))
 
             # if (n / 3 % n_batches == 0):
