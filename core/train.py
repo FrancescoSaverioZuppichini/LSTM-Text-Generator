@@ -7,8 +7,6 @@ import sys
 import os
 from Parser import args
 from logger import Logger
-
-print(args)
 # import matplotlib.pyplot as plt
 
 FILE_NAME = args.file
@@ -31,22 +29,18 @@ r.load(FILE_NAME)
 # r.read(FILE_NAME,encode_words=False)
 n_classes = r.get_unique_words()
 
-logger = Logger.Logger()
+logger = Logger.Logger(True, True)
 
-try:
-    validationR = Reader.Reader(sequence_len=sequence_len)
-    validationR.read(FILE_NAME + '/validation.txt')
 
-    X_val, Y_val = validationR.create_training_set()
-except:
-    VALIDATION = False
+x = tf.placeholder(tf.int64, [None, None], name='X')
+y = tf.placeholder(tf.int64,[None, None], name='Y')
 
-x = tf.placeholder(tf.float32, [None, None, n_classes])
-y = tf.placeholder(tf.float32,[None, None, n_classes])
+x = tf.one_hot(x, depth=n_classes)
+y = tf.one_hot(y, depth=n_classes)
 
 model = model.RNN.from_args(x, y, args)
 
-pred, cost, train_step, accuracy = model.build(x, y, args.layers, n_classes, args.eta, args.dropout)
+pred, cost, train_step, accuracy = model.build()
 
 initial_state, state = model.get_states()
 
@@ -94,22 +88,15 @@ last_state = None
 
 try:
     for x_batch, y_batch, epoch in r.create_iter(epochs):
-        # text = model.generate(x, y, 'The ', sess, n_classes, r, 500)
 
-        x_hot = tf.one_hot(x_batch,depth=n_classes,on_value=1.0).eval()
-        y_hot = tf.one_hot(y_batch,depth=n_classes,on_value=1.0).eval()
-
-        feed_dict = {x: x_hot, y: y_hot}
+        feed_dict = {'X:0': x_batch, 'Y:0': y_batch, 'pkeep:0': 0.8}
 
         if(last_state != None):
             feed_dict[initial_state] = last_state
 
-        _, loss, acc, last_state = sess.run([ train_step, cost, accuracy, state ], feed_dict=feed_dict)
+        _, last_state, loss, acc = sess.run([ train_step, state, cost, accuracy  ], feed_dict=feed_dict)
 
-        if(VALIDATION):
-             _, val_loss = sess.run([pred, cost], feed_dict={x: x_hot, y: y_hot})
-
-        logger.log("Doing batch {} of the {} epoch\n".format(n % n_batches, epoch))
+        # logger.log("Doing batch {} of the {} epoch\n".format(n % n_batches, epoch))
 
         n = n + 1
 
@@ -119,25 +106,31 @@ try:
         if(n % n_batches == 0 and n > 0):
             avg_loss = total_loss/n_batches
             avg_acc = total_acc/n_batches
-
-
-            preds = sess.run(pred, feed_dict={x: x_hot, y: y_hot, initial_state: last_state })
+        #
+        #
+            preds = sess.run(pred, feed_dict=feed_dict)
             keys = np.argmax(preds, axis=1)
+            pred_text = ""
+            # pred_text = model.generate(x, y, 'T', sess, n_classes, r, 1000)
+            text  = ""
 
-            pred_text  = ""
-            text = model.generate(x, y, 'The ', sess, n_classes, r, 500)
-            logger.log(logger.get_current_train_info(epoch, avg_loss, avg_acc, pred_text, pred))
+            feed_dict = {'X:0': r.val_data['X'],'Y:0': r.val_data['Y'], 'pkeep:0': 1.0}
 
-            # if (n / 3 % n_batches == 0):
-            #     text = model.generate(x, y, 'The ', sess, n_classes, r, 10)
-            #     logger.log("{}\n".format(text))
+            _, val_loss = sess.run([pred, cost], feed_dict=feed_dict)
+        #
+            logger.log(logger.get_current_train_info(epoch, avg_loss, avg_acc, val_loss, pred_text, text))
+        #
 
+            if (n / 2 % n_batches == 0):
+                text = model.generate(x, y, 'T', sess, n_classes, r, 1000)
+                logger.log("{}\n".format(text))
+        #
             total_loss = 0
             total_acc = 0
             total_val_loss = 0
-
+        #
             if(CHECK_POINT):
-                if(n/10 % n_batches == 0):
+                if(n/5 % n_batches == 0):
                     save_path = saver.save(sess, "{}/model-{}.ckpt".format(DIR_NAME,time.strftime("%H:%M:%S")))
                     print("Model saved in file: %s" % save_path)
 
@@ -148,8 +141,8 @@ except KeyboardInterrupt:
 if(TENSORBOARD):
     writer.close()
 
-model.generate(x, y, 'T', sess, n_classes, r)
-
+text = model.generate(x, y, 'T', sess, n_classes, r, 3000)
+logger.log(text)
 save_path = saver.save(sess, "/tmp/model.ckpt")
 print("Model saved in file: %s" % save_path)
 

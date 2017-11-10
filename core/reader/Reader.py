@@ -70,6 +70,14 @@ class Reader():
         self.data_set_inv = {k: v for v,k in enumerate(unique_chars)}
 
         self.data_encoded = [self.encode(char) for char in words]
+        # train 80% and val 20%
+        offset = len(self.data_encoded) // 100 * 80
+
+        self.train_data = self.data_encoded[:offset]
+
+        self.val_data = {'X':[], 'Y':[]}
+
+        self.val_data['X'], self.val_data['Y'] = self.create_data(self.data_encoded[offset:], 1, self.sequence_len)
 
     def decode_array(self, array):
         return [self.decode(index) for index in array]
@@ -90,6 +98,18 @@ class Reader():
         print('Data size: {}'.format(len(self.data)))
         print('Uniques symbols: {}'.format(self.get_unique_words()))
 
+    def create_data(self, raw_data, batch_size, sequence_size):
+        data = np.array(raw_data)
+        data_len = data.shape[0]
+        # using (data_len-1) because we must provide for the sequence shifted by 1 too
+        nb_batches = (data_len - 1) // (batch_size * sequence_size)
+        assert nb_batches > 0, "Not enough data, even for a single batch. Try using a smaller batch_size."
+        rounded_data_len = nb_batches * batch_size * sequence_size
+        xdata = np.reshape(data[0:rounded_data_len], [batch_size, nb_batches * sequence_size])
+        ydata = np.reshape(data[1:rounded_data_len + 1], [batch_size, nb_batches * sequence_size])
+
+        return xdata, ydata
+
     def create_iter(self, nb_epochs):
         """
         Divides the data into batches of sequences so that all the sequences in one batch
@@ -106,7 +126,7 @@ class Reader():
             y: on batch of target sequences, i.e. training sequences shifted by 1
             epoch: the current epoch number (starting at 0)
         """
-        raw_data = self.data_encoded
+        raw_data = self.train_data
         batch_size = self.batch_size
         sequence_size = self.sequence_len
         data = np.array(raw_data)
@@ -115,8 +135,9 @@ class Reader():
         nb_batches = (data_len - 1) // (batch_size * sequence_size)
         assert nb_batches > 0, "Not enough data, even for a single batch. Try using a smaller batch_size."
         rounded_data_len = nb_batches * batch_size * sequence_size
-        xdata = np.reshape(data[0:rounded_data_len], [batch_size, nb_batches * sequence_size])
-        ydata = np.reshape(data[1:rounded_data_len + 1], [batch_size, nb_batches * sequence_size])
+        xdata, ydata =  self.create_data(raw_data, batch_size, sequence_size)
+        # xdata = np.reshape(data[0:rounded_data_len], [batch_size, nb_batches * sequence_size])
+        # ydata = np.reshape(data[1:rounded_data_len + 1], [batch_size, nb_batches * sequence_size])
 
         for epoch in range(nb_epochs):
             for batch in range(nb_batches):

@@ -1,6 +1,6 @@
 #!/bin/bash -l
 #
-#SBATCH --job-name="lstm"
+#SBATCH --job-name="dif_equat_20d"
 #SBATCH --partition=gpu
 #SBATCH --time=10:00:00
 #SBATCH --error=a.%j.err

@@ -2,7 +2,7 @@
 #
 #SBATCH --job-name="lstm"
 #SBATCH --partition=tflow
-#SBATCH --time=06:00:00
+#SBATCH --time=08:00:00
 #SBATCH --output=a.%j.out
 #SBATCH --error=a.%j.err
 module load python/3.5.0
