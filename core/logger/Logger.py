@@ -5,7 +5,9 @@ from concurrent.futures import ThreadPoolExecutor
 
 
 class Logger:
-
+    """
+    This class logs shit on stdout and write in a log file
+    """
     def __init__(self, should_store=True,should_print=True):
 
         self.file_name = "output-{}.txt".format(time.strftime("%H:%M:%S"))
@@ -35,7 +37,7 @@ class Logger:
                                               args.dropout,self.file_name,len(r.data),r.get_unique_words(),
                                               n_batches,args.epochs,start)
 
-    def get_current_train_info(self, epoch, avg_loss, avg_acc, val_loss, pred_text,text):
+    def get_current_train_info(self, epoch, avg_loss, avg_acc, val_loss, pred_text="", text=""):
 
         return "\nEpoch: {}\nAVG loss: {}\n" \
                "VAL loss: {}\n" \
@@ -54,12 +56,11 @@ class Logger:
 
 
 class Progress:
-    executor = ThreadPoolExecutor(2)
-
+    """
+    TODO: not working lol
+    """
     @staticmethod
-    def progress_inner(size, i, total):
-        print('asd')
-        time.sleep(0.1)
+    def progress(size, i, total):
         step = total / size
 
         if (i % step == 0):
@@ -69,13 +70,3 @@ class Progress:
         if (i == total):
             sys.stdout.write("\n")
 
-    @staticmethod
-    def progress(size, i, total):
-        task = Progress.executor.submit(Progress.progress_inner, (size, i, total))
-        task.done()
-
-
-
-#
-# for i in range(1,200):
-#     Progress.progress(100, i, 200)

@@ -1,12 +1,12 @@
 import tensorflow as tf
 from tensorflow.contrib import rnn
 from tensorflow.contrib import layers as l
-
+from Utils import Utils
 import numpy as np
 
 class RNN:
 
-    def __init__(self, x, y, layers, eta=0.01,):
+    def __init__(self, x, y, layers, eta=0.01):
 
         self.x = x
         self.y = y
@@ -33,8 +33,7 @@ class RNN:
 
         cells = rnn.MultiRNNCell(cells, state_is_tuple=True)
 
-        # if(self.dropout):
-        #     cells = rnn.DropoutWrapper(cells, output_keep_prob=self.dropout_prob)
+        # cells = rnn.DropoutWrapper(cells, output_keep_prob=self.dropout_prob)
 
         return cells
 
@@ -64,7 +63,7 @@ class RNN:
 
     def train_step(self, loss):
 
-        train_step = tf.train.AdamOptimizer(self.eta).minimize(loss)
+        train_step = tf.train.RMSPropOptimizer(self.eta).minimize(loss)
 
         return train_step
 
@@ -99,11 +98,13 @@ class RNN:
         return accuracy
 
     def build(self):
-
+        # create model
         rnn_output = self.run_rnn()
 
         output_linear, output_linear_activated = self.run_linear(rnn_output)
-
+        # save all predictions
+        self.preds = output_linear_activated
+        # store the correct one
         self.pred = pred = self.get_pred(output_linear_activated)
 
         loss = self.get_loss(output_linear)
@@ -121,22 +122,6 @@ class RNN:
         text = input_val
         x_batch = np.array([r.encode_array(list(input_val))])
 
-        x_hot = tf.one_hot(x_batch, depth=n_classes, on_value=1.0)
-
-        # self.initial_state = self.rnn_layers.zero_state(tf.shape(self.x)[0], dtype=tf.float32)
-        #
-        # for i in range(n_text):
-        #
-        #     last_state = sess.run(self.last_state, feed_dict={x: x_hot.eval()})
-        #
-        #     preds = sess.run(self.pred, feed_dict={x: x_hot.eval(), self.initial_state: last_state})
-        #     # keys = np.argmax(preds, axis=1)
-        #     keys = preds
-        #     text += "".join(r.decode_array(keys[0]))
-        #
-        #     preds = keys.reshape([len(x_batch), len(x_batch[0])])
-        #     x_hot = tf.one_hot(preds, depth=n_classes, on_value=1.0)
-
         last_state = None
 
         for i in range(n_text):
@@ -145,33 +130,13 @@ class RNN:
             if (last_state != None):
                 feed_dict[self.initial_state] = last_state
 
-            preds, last_state = sess.run([self.pred, self.last_state], feed_dict=feed_dict)
+            preds, last_state = sess.run([self.preds, self.last_state], feed_dict=feed_dict)
 
+            keys = Utils.sample_prob_picker_from_best(preds)
 
-            keys = preds
-            text += "".join(r.decode_array(keys[0]))
+            text += "".join(r.decode_array(keys))
 
             x_batch = keys.reshape([len(x_batch), len(x_batch[0])])
-            # x_hot = tf.one_hot(preds, depth=n_classes, on_value=1.0)
 
-        # self.initial_state = self.rnn_layers.zero_state(tf.shape(self.x)[0], dtype=tf.float32)
-        #
-        # last_state = None
-        #
-        # for i in range(n_text):
-        #     feed_dict = {'X:0': x_batch}
-        #     if (last_state != None):
-        #         feed_dict[self.initial_state] = last_state
-        #
-        #     preds, last_state = sess.run([self.pred, self.last_state], feed_dict=feed_dict)
-        #     # last_state = sess.run(self.last_state, feed_dict={self.x: x_hot.eval()})
-        #
-        #     # keys = np.argmax(preds, axis=1)
-        #     keys = preds
-        #     text += "".join(r.decode_array(keys[0]))
-        #
-        #     x_batch = keys.reshape([len(x_batch), len(x_batch[0])])
-        #     # x_hot = tf.one_hot(preds, depth=n_classes, on_value=1.0)
-        # print(text)
         return text
 

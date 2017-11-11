@@ -71,7 +71,7 @@ class Reader():
 
         self.data_encoded = [self.encode(char) for char in words]
         # train 80% and val 20%
-        offset = len(self.data_encoded) // 100 * 80
+        offset = len(self.data_encoded) // 100 * 90
 
         self.train_data = self.data_encoded[:offset]
 
