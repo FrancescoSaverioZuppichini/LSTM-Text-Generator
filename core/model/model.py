@@ -1,23 +1,22 @@
 import tensorflow as tf
 from tensorflow.contrib import rnn
-from tensorflow.contrib import layers as l
-from Utils import Utils
+# from tensorflow.contrib import layers as l
+from utils import Utils
 import numpy as np
 
 class RNN:
 
-    def __init__(self, x, y, layers, eta=0.01):
+    def __init__(self, layers, n_classes, eta=0.01):
 
-        self.x = x
-        self.y = y
         self.layers = layers
         self.eta = eta
+        self.n_classes = n_classes
         self.dropout_prob = tf.placeholder(tf.float32, name='pkeep')
 
     @classmethod
-    def from_args(cls,x,y, args):
+    def from_args(cls, args, n_classes):
 
-        new_rnn = RNN(x,y,args.layers, args.eta)
+        new_rnn = RNN(args.layers, n_classes, args.eta,)
 
         return new_rnn
 
@@ -25,15 +24,13 @@ class RNN:
 
         return self.initial_state, self.last_state
 
-    def create_rnn_layers(self, cell=rnn.BasicLSTMCell):
+    def create_rnn_layers(self, cell=rnn.LSTMCell):
 
         cells = [cell(size) for size in self.layers]
 
         cells = [rnn.DropoutWrapper(cell,input_keep_prob=self.dropout_prob, output_keep_prob=self.dropout_prob) for cell in cells]
 
         cells = rnn.MultiRNNCell(cells, state_is_tuple=True)
-
-        # cells = rnn.DropoutWrapper(cells, output_keep_prob=self.dropout_prob)
 
         return cells
 
@@ -54,7 +51,11 @@ class RNN:
 
         rnn_output_flat = tf.reshape(rnn_output, [-1, self.layers[-1]])
 
-        output_linear = l.linear(rnn_output_flat, shape[-1])
+        W = tf.Variable(tf.truncated_normal([self.layers[-1], shape[-1]], stddev=0.1), name='W')
+        b = tf.Variable(tf.zeros([shape[-1]]), name='b')
+
+        output_linear = tf.matmul(rnn_output_flat, W) + b
+        # output_linear = l.linear(rnn_output_flat, shape[-1], nam)
 
         output_linear_activated = tf.nn.softmax(output_linear)
         # output_linear_activated  = output_linear
@@ -63,7 +64,7 @@ class RNN:
 
     def train_step(self, loss):
 
-        train_step = tf.train.RMSPropOptimizer(self.eta).minimize(loss)
+        train_step = tf.train.AdamOptimizer(self.eta).minimize(loss)
 
         return train_step
 
@@ -98,12 +99,16 @@ class RNN:
         return accuracy
 
     def build(self):
+        self.x = tf.placeholder(tf.int64, [None, None], name='X')
+        self.y = tf.placeholder(tf.int64, [None, None], name='Y')
+        # each input/target must be a 1-hot vector
+        self.x = tf.one_hot(self.x, depth=self.n_classes, name='X_hot')
+        self.y = tf.one_hot(self.y, depth=self.n_classes, name='Y_hot')
         # create model
         rnn_output = self.run_rnn()
-
         output_linear, output_linear_activated = self.run_linear(rnn_output)
         # save all predictions
-        self.preds = output_linear_activated
+        self.preds = preds = output_linear_activated
         # store the correct one
         self.pred = pred = self.get_pred(output_linear_activated)
 
@@ -115,15 +120,16 @@ class RNN:
 
         cost = tf.reduce_mean(loss)
 
-        return pred, cost, train_step, accuracy
+        return pred, preds, cost, train_step, accuracy,
 
-    def generate(self, x, y, input_val, sess, n_classes, r, n_text=100):
+    def generate(self, input_val, sess, interactive=False, n_text=100):
 
         text = input_val
-        x_batch = np.array([r.encode_array(list(input_val))])
+        x_batch = np.array([[ord(c) for c in input_val]])
 
         last_state = None
-
+        if (interactive):
+            print(input_val,end='')
         for i in range(n_text):
             feed_dict = {'X:0': x_batch, 'pkeep:0':1.0}
 
@@ -131,12 +137,14 @@ class RNN:
                 feed_dict[self.initial_state] = last_state
 
             preds, last_state = sess.run([self.preds, self.last_state], feed_dict=feed_dict)
+            preds = np.array([preds[-1]])
+            next = Utils.sample_prob_picker_from_best(preds)
+            if(interactive):
+                print(chr(next[0]),end='')
+            # next is 1D vector like [14]
+            text += "".join(chr(next[0]))
 
-            keys = Utils.sample_prob_picker_from_best(preds)
-
-            text += "".join(r.decode_array(keys))
-
-            x_batch = keys.reshape([len(x_batch), len(x_batch[0])])
+            x_batch = np.array([next])
 
         return text
 

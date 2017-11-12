@@ -63,14 +63,9 @@ class Reader():
     def create_data_set(self, words):
 
         self.data = words
-        # little trick, create a set that will get rid of duplicated
-        unique_chars = list(set(words))
-
-        self.data_set = {k: v for k,v in enumerate(unique_chars)}
-        self.data_set_inv = {k: v for v,k in enumerate(unique_chars)}
 
         self.data_encoded = [self.encode(char) for char in words]
-        # train 80% and val 20%
+        # train 80% and val 10%
         offset = len(self.data_encoded) // 100 * 90
 
         self.train_data = self.data_encoded[:offset]
@@ -86,10 +81,10 @@ class Reader():
         return [self.encode(index) for index in array]
 
     def decode(self,index):
-        return self.data_set[index]
+        return chr(index)
 
     def encode(self,word):
-        return self.data_set_inv[word]
+        return ord(word)
 
     def get_unique_words(self):
         return len(self.data_set.keys())
@@ -134,10 +129,8 @@ class Reader():
         # using (data_len-1) because we must provide for the sequence shifted by 1 too
         nb_batches = (data_len - 1) // (batch_size * sequence_size)
         assert nb_batches > 0, "Not enough data, even for a single batch. Try using a smaller batch_size."
-        rounded_data_len = nb_batches * batch_size * sequence_size
+
         xdata, ydata =  self.create_data(raw_data, batch_size, sequence_size)
-        # xdata = np.reshape(data[0:rounded_data_len], [batch_size, nb_batches * sequence_size])
-        # ydata = np.reshape(data[1:rounded_data_len + 1], [batch_size, nb_batches * sequence_size])
 
         for epoch in range(nb_epochs):
             for batch in range(nb_batches):
@@ -147,20 +140,3 @@ class Reader():
                 y = np.roll(y, -epoch, axis=0)
                 yield x, y, epoch
 
-# r = Reader(batch_size=2, sequence_len=8)
-# r.create_data_set(list("DIOCANE CIODCANE DIOCANE"))
-# batches = r.create_iter(3)
-#
-# for x in batches:
-#     print(x[0])
-#     print(x[1])
-#     print('-------')
-# r.create_data_set("The quick brown seventh heaven o ")
-# print(len(r.data))
-# X, Y = r.create_training_set()
-#
-# print(X.shape)
-# print(X[0][0], X[1][0])
-# x, y = r.next(1)
-# print(x.shape)
-# print(x)

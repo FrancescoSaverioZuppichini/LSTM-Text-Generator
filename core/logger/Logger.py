@@ -8,9 +8,9 @@ class Logger:
     """
     This class logs shit on stdout and write in a log file
     """
-    def __init__(self, should_store=True,should_print=True):
+    def __init__(self, should_store=True, should_print=True, file_name="output-{}.txt".format(time.strftime("%H:%M:%S"))):
 
-        self.file_name = "output-{}.txt".format(time.strftime("%H:%M:%S"))
+        self.file_name = file_name
         self.should_store = should_store
         self.should_print = should_print
 
@@ -51,7 +51,7 @@ class Logger:
             print(something)
 
         if(self.should_store):
-            with open(self.file_name, 'a') as f:
+            with open(self.file_name, 'a', encoding='utf-8') as f:
                 f.write(something)
 
 
