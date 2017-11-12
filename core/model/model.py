@@ -24,6 +24,13 @@ class RNN:
 
         return self.initial_state, self.last_state
 
+    def create_variables(self):
+        self.x = tf.placeholder(tf.int64, [None, None], name='X')
+        self.y = tf.placeholder(tf.int64, [None, None], name='Y')
+        # each input/target must be a 1-hot vector
+        self.x = tf.one_hot(self.x, depth=self.n_classes, name='X_hot')
+        self.y = tf.one_hot(self.y, depth=self.n_classes, name='Y_hot')
+
     def create_rnn_layers(self, cell=rnn.LSTMCell):
 
         cells = [cell(size) for size in self.layers]
@@ -55,10 +62,9 @@ class RNN:
         b = tf.Variable(tf.zeros([shape[-1]]), name='b')
 
         output_linear = tf.matmul(rnn_output_flat, W) + b
-        # output_linear = l.linear(rnn_output_flat, shape[-1], nam)
 
         output_linear_activated = tf.nn.softmax(output_linear)
-        # output_linear_activated  = output_linear
+
         return output_linear, output_linear_activated
 
 
@@ -99,11 +105,12 @@ class RNN:
         return accuracy
 
     def build(self):
-        self.x = tf.placeholder(tf.int64, [None, None], name='X')
-        self.y = tf.placeholder(tf.int64, [None, None], name='Y')
-        # each input/target must be a 1-hot vector
-        self.x = tf.one_hot(self.x, depth=self.n_classes, name='X_hot')
-        self.y = tf.one_hot(self.y, depth=self.n_classes, name='Y_hot')
+        """
+        Create the full graph for this model
+        :return: The tf computation nodes
+        """
+
+        self.create_variables()
         # create model
         rnn_output = self.run_rnn()
         output_linear, output_linear_activated = self.run_linear(rnn_output)
@@ -123,13 +130,22 @@ class RNN:
         return pred, preds, cost, train_step, accuracy,
 
     def generate(self, input_val, sess, interactive=False, n_text=100):
-
+        """
+        Genere text from a input
+        :param input_val: The initial start text
+        :param sess: The current tf session
+        :param interactive: If True, it will print while generating
+        :param n_text: How much text we have to generate
+        :return: The generated text
+        """
         text = input_val
         x_batch = np.array([[ord(c) for c in input_val]])
 
         last_state = None
+
         if (interactive):
             print(input_val,end='')
+
         for i in range(n_text):
             feed_dict = {'X:0': x_batch, 'pkeep:0':1.0}
 
@@ -138,7 +154,9 @@ class RNN:
 
             preds, last_state = sess.run([self.preds, self.last_state], feed_dict=feed_dict)
             preds = np.array([preds[-1]])
+
             next = Utils.sample_prob_picker_from_best(preds)
+
             if(interactive):
                 print(chr(next[0]),end='')
             # next is 1D vector like [14]

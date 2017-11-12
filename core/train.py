@@ -85,7 +85,6 @@ def train_model(args):
 
             total_loss = 0
             total_acc = 0
-            total_val_loss = 0
 
 
             if(CHECK_POINT):

@@ -15,7 +15,7 @@ parser.add_argument('--verbose', help='Output at each iteration', default=False,
 parser.add_argument('--checkpoint', help='Store the model every 5 epochs', default=True, type=bool)
 parser.add_argument('--train', help='Train the model', default=False, type=bool)
 parser.add_argument('--generate', help='Generate text', default=False, type=bool)
-parser.add_argument('--from_model', help='The saved model you want to use', default='./checkpoint-12:36:51/model-12:37:10.ckpt', type=str)
+parser.add_argument('--from_model', help='The saved model you want to use', default='shakespeare', type=str)
 parser.add_argument('--n_text', help='Number of chars to be generated', default=2000, type=int)
 parser.add_argument('--start_text', help='The starting sentence', default="T", type=str)
 

@@ -16,7 +16,12 @@ class Reader():
 
 
     def load(self, path):
-
+        """
+        Load a provided path, it will check if is a directory
+        or a normal txt file and select the correct behavior
+        :param path: Path to a file/dir
+        :return:
+        """
         isFile = os.path.isfile(path)
 
         if(isFile):
@@ -96,7 +101,6 @@ class Reader():
     def create_data(self, raw_data, batch_size, sequence_size):
         data = np.array(raw_data)
         data_len = data.shape[0]
-        # using (data_len-1) because we must provide for the sequence shifted by 1 too
         nb_batches = (data_len - 1) // (batch_size * sequence_size)
         assert nb_batches > 0, "Not enough data, even for a single batch. Try using a smaller batch_size."
         rounded_data_len = nb_batches * batch_size * sequence_size
@@ -105,6 +109,7 @@ class Reader():
 
         return xdata, ydata
 
+    # copied from https://github.com/martin-gorner/tensorflow-rnn-shakespeare/blob/master/my_txtutils.py#L99
     def create_iter(self, nb_epochs):
         """
         Divides the data into batches of sequences so that all the sequences in one batch
