@@ -1,0 +1,1237 @@
+================
+Model layout:[512, 512, 512]
+Data: ./data/bible.txt
+Sequence len:   100   
+Learning rate:  0.001  
+Batch size:    64   
+Dropout: 0.8
+================
+output-00:10:19.txt
+Data size: 5428776 
+N classes:    0    
+N batches:   848   
+N epochs:   100   
+Start at: 00:10:21
+
+Epoch: 1
+AVG loss: 2.1390451378417463
+VAL loss: 1.5230478048324585
+AVG acc: 0.4078084041720326
+=====================
+
+=====================
+
+
+Epoch: 2
+AVG loss: 1.5095701189535968
+VAL loss: 1.3055886030197144
+AVG acc: 0.5583536239024603
+=====================
+
+=====================
+
+Tohher with
+   the wilderness to bean and servants, the world of the Lord thy
+   son, and the word of the children of Israel to peach, and a come to
+   delivered them, thou shalt be fill in the way of the house, and all
+   stangers, and shall be the stones of this house.
+
+   ^16As the children of Assembar, the son of Jahahia when they said,
+
+   ^28And said unto them, Thou hast not be a stard of the country of the Lord
+   of thy house that he will not be the people and fir the ways of the Lord,
+
+   ^11And the saith of the Lord, O Lord, I have not be a man of the holy of
+   her, that thou say unto the Levites, and said unto the Lord.
+
+   ^11But I say unto them, I will be the work of heaven, as he was not
+   servetth to this day that they heald to pass, and set the children of
+   Israel.
+
+   ^2And the san of Assyran said, Thus saith, Behild, I will be a servant in the
+   words, and to the wall of the Lord, and shat the Lord, they shall bring thee
+   the ways of them, and the servant shall 
+
+Epoch: 3
+AVG loss: 1.3663041927623298
+VAL loss: 1.2351032495498657
+AVG acc: 0.5952278989947067
+=====================
+
+=====================
+
+
+Epoch: 4
+AVG loss: 1.2970282438228715
+VAL loss: 1.2017571926116943
+AVG acc: 0.6129924987425219
+=====================
+
+=====================
+
+Tomes,
+   and the children of Assyria took the sword, and went to his father
+   whomselves thereof.
+
+   ^20Therefore the Lord came to pass after the commandments of Judah and
+   all the sins of the children of Israel, and to the city of the
+   children of Israel, and to the hand of the Lord, and thos shall be
+   the servants that they had said.
+
+   ^24And the Lerd said, Because I say unto him, Bless ye the Lord, that
+   his mouth is a great man that they shall be desorated.
+
+   ^22For they shall be there a marner that there was numbered, and the
+   seed of their sin stone an any of him.
+
+   ^20And they went over to this way, they saw to him the commandments,
+   and said, There is no man's soul, and the sanctuary shall be above a
+   starn to the hands.
+
+   ^32For the same, and they saw the cities of the country, when he
+   was the cities of the hand, and said, It that the Lord hath spoken
+   up, they said, There is no pass of his face as the Lord.
+
+   ^22And they said, I will did eat and
+
+Epoch: 5
+AVG loss: 1.2546325864375762
+VAL loss: 1.1657886505126953
+AVG acc: 0.6239196820500886
+=====================
+
+=====================
+
+
+Epoch: 6
+AVG loss: 1.2248389930376467
+VAL loss: 1.145553708076477
+AVG acc: 0.6316074452731969
+=====================
+
+=====================
+
+The son of
+   Joseph, with his father's servants, and to the Lord, that he
+   would send the people against the Lord, and the Lord had made this
+   hand out of the tabernacle of the Lord and the Lord of hosts, with the
+   house of the Lord.
+
+   ^11And they went to Jerusalem, and to be a sons of Jerusalem all the
+   south, and the sea of Jesus.
+
+   ^11And they went out to the sea of the children of Israel: and the people
+   saw that the Lord had spoken to heaven, and they said, It is not a man of
+   Israel, and the Lord spake unto Moses, saying,
+
+   ^2Thus saith the Lord GOD; The Lord shall brought the word of the
+   Lord, which is told to the Lord: and the Lord shall spake unto them,
+   that he spare unto the Lord, and his house was the firstborn of the
+   sea tite.
+
+   ^10And the priest said, Let the Lord the Lord hath done and the service of
+   the country, and shall not be saved and shall serve him.
+
+   ^15And if ye shall be the same that thou mayest be the Lord thy God, to
+   speak 
+
+Epoch: 7
+AVG loss: 1.2024119635516743
+VAL loss: 1.144412636756897
+AVG acc: 0.6373920129998675
+=====================
+
+=====================
+
+
+Epoch: 8
+AVG loss: 1.1830163612118307
+VAL loss: 1.1306978464126587
+AVG acc: 0.6425913819726908
+=====================
+
+=====================
+
+Tarria
+   were a stranger, and to heark not to his son, which hath not burnt
+   away, and take his hand, and shall stand up his seed, and the wicked
+   shall be called together. And if the prophet have seen all the princes
+   of the city, and they shall buried the horsemen and the statutes of
+   Jerusalem.
+
+   ^21And the people took himself unto Jerusalem, and set the country of
+   the congregation of Israel, and said, Why wilt thou not bear a sacrifice of
+   the Lord thy God.
+
+   ^30And the Lord spake unto Moses, saying,
+
+   ^2Ton of man, saying,
+
+   ^12Speak unto the children of Israel, that the priests said, Thus
+   saith the Lord God of Israel, The servings of the children of Israel were
+   the sons, and the congregation of the temple, and should be a south as
+   a strong father an angel.
+
+   ^20And the Lord said, I am not, because thou shalt not be cast up to the
+   children of Assyria, and they shall be a confidence in the hand of
+   the Lord, and hid the children of Israel, sayin
+
+Epoch: 10
+AVG loss: 1.1684420162214424
+VAL loss: 1.1251085996627808
+AVG acc: 0.6462490713258959
+=====================
+
+=====================
+
+
+Epoch: 11
+AVG loss: 1.1555797120310225
+VAL loss: 1.120977759361267
+AVG acc: 0.6496698031166814
+=====================
+
+=====================
+
+The mannor
+   of the cill.
+
+   ^22Therefore hearken unto me and the prophets are this, which the Lord
+   hath done unto the Lord GOD of Israel, when thou hast done to the
+   sons of thy children.
+
+   ^3And it same to pass, when the Lord had sent them, and said, This is
+   a man that hath speaked unto him, and she sent them into the land of
+   their fathers, which was to divide the city, and the plocle of the
+   priests, and the conservants of the congregation of Israel.
+
+   ^2And the Lord said unto Moses, Behold, the word of their God came to the
+   children of Israel, that they might be as a man that is between him,
+   as the Lord hath spaken unto the Lord thy God, and hast never defiled
+   the works of his hands unto a city, which the Lord hath spoken in
+   his heart.
+
+   ^10And the Lord said, We have not seen the wicked whether thou hast said
+   unto me, The Lord hath cast out out of Egypt, and hid servants, and
+   the sand of men that is in the hands of his servants, that is in his
+
+
+Epoch: 12
+AVG loss: 1.143925073995905
+VAL loss: 1.1129282712936401
+AVG acc: 0.6527382382806742
+=====================
+
+=====================
+
+
+Epoch: 13
+AVG loss: 1.1351006073209475
+VAL loss: 1.105444312095642
+AVG acc: 0.6550318713317502
+=====================
+
+=====================
+
+Tobias.
+
+   ^10And hesastites set the book of the hand of the Lord, and sent a word
+   out of his sight, and to bring his fire, and the sea with them, and
+   all the congregation of Judah went up, and set his herd four cabits to
+   the hall of heaven.
+
+   ^31Now he commanded to his statutes, and the people saw the city, and
+   they set their staves on the standards.
+
+   ^31And they sent to the house of the Lord: and the charge of the
+   pordions was covered thereof, and slew them into the land of their
+   fathers.
+
+   ^14And Jesus said unto him, Take away the children of Israel in a sign
+   of the heathen, and take thee a captain of the city, and they seale
+   them all that are in their houses and to the heathen, and that thou mayest
+   do a consection.
+
+   ^10Then the Lord said unto me, See, and I will see thee, and thou shalt
+   set up his hand unto me, and shall not be cut off from the hand of thy
+   God:
+
+   ^12That her may serve thee, and take thee a curse upon thee, and with
+   th
+
+Epoch: 14
+AVG loss: 1.12801915069796
+VAL loss: 1.1035454273223877
+AVG acc: 0.6570126365799949
+=====================
+
+=====================
+
+
+Epoch: 15
+AVG loss: 1.1199827195619636
+VAL loss: 1.0971436500549316
+AVG acc: 0.658948993978073
+=====================
+
+=====================
+
+Tarah.
+
+   ^2And this is the thing that is come unto the children of Israel that
+   is by the land of Egypt shall be as the couplings of them that were
+   there, and the stars thereof shall be their children, when they have
+   done this which were toward the cherubims that are cut off into
+   the house of the Lord their God.
+
+   ^13And the Lord shall cast it treat into another sign,, to say, Because
+   the Lord hath spaken by the work of the Lord, that the Lord hath said
+   unto him, Thou hast not cast thee out of the land.
+
+   ^20And he said, I am weaky, and we have not seen the Lord, as he hath
+   drinken unto my father, and I will deliver them all the work of the
+   house of the Lord.
+
+   ^11But the Lord spake unto Moses, saying,
+
+   ^2Speak unto the children of Israel that did them to the priests
+   that were in the land of Egypt, and they came to their sins, and sent
+   it unto the Lord the God of Israel and of their fathers, and to the
+   people toward the country of the Lord thy 
+
+Epoch: 16
+AVG loss: 1.1149421986543908
+VAL loss: 1.0908617973327637
+AVG acc: 0.6604930700839691
+=====================
+
+=====================
+
+
+Epoch: 17
+AVG loss: 1.1076201765604738
+VAL loss: 1.0921413898468018
+AVG acc: 0.6625585918718914
+=====================
+
+=====================
+
+Tyous,
+   which shall be said,
+
+   ^14Therefore will I speak any more, and thy sons are clean, and shalt
+   see the soul of the Lord thy God, and to thee and thy presence.
+
+   ^10Thou shalt say, We say unto you, What hast thou not seen a son? and thou
+   hast spoken the sabbath day to thee, and see, and be the Lord thy
+   God and thy fathers,
+
+   ^3That thou shalt say unto you, Thus saith the Lord GOD; Thou art a
+   people, and they shall see them, and thou shalt say, I have done unto
+   me.
+
+   ^21And I will save the children of Israel to be commanded, and take them
+   a wife for them, and shall bring this city of the hand of their fathers,
+   and they shall be ashamed of the Lord, and shall come again to the Lord.
+
+   ^10Also the Levites shall be their sin without blemish: and they shall
+   serve, that thou shalt not be as an offering made in thy stead.
+
+   ^10And thou shalt bring them unto the city of Judah at the sanctuary, a
+   seven pall of all the people of the land that is in th
+
+Epoch: 18
+AVG loss: 1.1020459155991393
+VAL loss: 1.0874649286270142
+AVG acc: 0.664097509434763
+=====================
+
+=====================
+
+
+Epoch: 20
+AVG loss: 1.096330660061454
+VAL loss: 1.0903840065002441
+AVG acc: 0.6655011802630605
+=====================
+
+=====================
+
+The
+   Philistines are. There was none to the chamber of Judah, and
+   therefore that which was in Judah was there.
+
+   ^21Also the Levites also was too heart over the host of the children
+   of Asher, and said, What have I done to thee? And I will set the people
+   against them as the sea of the city.
+
+   ^31The children of Israel and the children of Israel wept, and they
+   went up against the Lord, and they carried them into all the cities of
+   Jabeshgilead and to the children of Ammon, and the princes of the
+   children of Ammon and his sons.
+
+   ^40And the Lord spake unto Moses, saying,
+
+   ^21Thus saith the Lord of hosts the God of Israel, Thus saith the Lord GOD,
+   I have sent to make mercy upon the house of Israel: and they shall be
+   set on the fatherless of the land, and the statutes are a sign of salvation
+   in the land of Egypt,
+
+   ^11And she shall bring all his heads and the priest that be sold unto
+   his fathers seven years in her house.
+
+   ^11And if the placu shall
+
+Epoch: 21
+AVG loss: 1.0915296476264045
+VAL loss: 1.0867218971252441
+AVG acc: 0.6669358072696991
+=====================
+
+=====================
+
+
+Epoch: 22
+AVG loss: 1.0867584714630865
+VAL loss: 1.082176685333252
+AVG acc: 0.6682982044118755
+=====================
+
+=====================
+
+The seven hundred
+   men that dwelt in Jerusalem, and the watchman that serveth them
+   that dwell in the house of the Lord their God.
+
+   ^20Therefore there shall be a man that is a stranger, as the Lord hath
+   commanded thee.
+
+   ^2And he sat to the wilderness, and they went out to the city, and slew
+   their statutes, and came to Shechem and Amolek, and took them in a
+   commin and toward the east.
+
+   ^3And his sons was angry: and, lo, the captain of the country was the
+   covenant of the Lord, they set her in his hand to him, and saw him to
+   be hid, and sat in his bed,
+
+   ^2And said unto him, Behold, thou, O Lord, thy God, when the Lord hath
+   sent the people that are cleansed this day, then his south, that have
+   drunken thy brethren, take away thy brethren, and to shout thyself,
+   and say unto them, Wear the words of the Lord thy God.
+
+   ^20And they cried unto the Lord, that the king said, Take thy son and
+   to another, and say, To the Lord hath spoken in his hand, and s
+
+Epoch: 23
+AVG loss: 1.0827705733618647
+VAL loss: 1.0796089172363281
+AVG acc: 0.6694470457029793
+=====================
+
+=====================
+
+
+Epoch: 24
+AVG loss: 1.0782849839976374
+VAL loss: 1.0837527513504028
+AVG acc: 0.6706191065879363
+=====================
+
+=====================
+
+Thus saith the Lord GOD; If ye will not do as
+   thou shalt send and take to deal beating to the sea.
+
+   ^13And the Lord said unto Moses, Behold, I will bring this man's
+   san to peace to the Lord thy God, afterward thou sawest, that thy son
+   went up into the city of Judah to be carried away from twenty yeans.
+
+   ^2And his mother's name, began Jacob, and his brethren, and his
+   son, and his brethren, and his sons, and his sens toward the
+   tabernacle of the congregation, and all that he had made by fire on
+   the side of the house of the Lord, as the Lord spoken.
+
+   ^2And in the sixth day of the month, the children of Aaron went to the
+   children of Reuben, according to the commandment of the Lord, the
+   Lord should be the first month, and the princes of the tabernacle of
+   the congregation.
+
+   ^12And they bowed,the tabernacle of the congregation, and they departed
+   to the tabernacle, to be a city of thirty and two years old when
+   Joshua took the charge of the tabernacle
+
+Epoch: 25
+AVG loss: 1.077168805419274
+VAL loss: 1.0803766250610352
+AVG acc: 0.6708864632923648
+=====================
+
+=====================
+
+
+Epoch: 26
+AVG loss: 1.0726468862508827
+VAL loss: 1.077038049697876
+AVG acc: 0.6721196969584474
+=====================
+
+=====================
+
+Tyru
+,    _________________________________________________________________
+
+    Chapter 11
+
+   And the word of the Lord came unto me, saying,
+
+   ^22Spoil unto the people, and say, When I have done this parable in
+   the land of Egypt and thy word to do unto thee, saith the Lord; that thou
+   shouldest say unto them,
+
+   ^2Thus saith the Lord of hosts, the God of Israel, If the Lord thy
+   God hath spoken the people, shall be their son, when thou hast spoken
+   to them, take them, that they may see thy forefrom, and thou shalt bring
+   thy possession for ever in the land which thou shalt see with thee.
+
+   ^3And the Lord spake unto Moses, saying,
+
+   ^2Speak unto the children of Israel, saying, These are the children of
+   Israel, saith the Lord, when I have spoken unto them, saying, If
+   there be a man whom thou hast.
+
+   ^14But when the king said to Joseph, If thou wilt say, Thou art this
+   day that the Lord should die.
+     _________________________________________________________
+
+Epoch: 27
+AVG loss: 1.068725690737648
+VAL loss: 1.0760843753814697
+AVG acc: 0.673221185733125
+=====================
+
+=====================
+
+
+Epoch: 28
+AVG loss: 1.065856414442917
+VAL loss: 1.0758253335952759
+AVG acc: 0.6739375786680095
+=====================
+
+=====================
+
+Taboth, which is by Jezreel.
+
+   ^20And they sat before the king the seventh year of the servants, when
+   the Levites went to the chamber of the city, and set the sanctuary on
+   the forr hundred and thentieth year. And the children of Israel said
+   unto her, The Lord hath called him the prophets the God, and he will
+   say to the king, What shall the man that is brought unto the Lord? and
+   they shall not stand before thee and to him that shall cause him
+   forgiven thee? and thou shalt not speak these things to the Lord
+   which thou hast commanded thee.
+     ________________________________________________________________
+
+    Chapter 2
+
+   And it came to pass, when Joab was called the servace of the king of
+   Judah, that the people sent unto him all his people, and to all that
+   were with him, saying,
+
+   ^2To them that were within the children of Judah to kill the children
+   of Israel, that the city shall be confounded, and they that were not
+   stritched up as the child en o
+
+Epoch: 30
+AVG loss: 1.0617333329370562
+VAL loss: 1.0801267623901367
+AVG acc: 0.6749823168622997
+=====================
+
+=====================
+
+
+Epoch: 31
+AVG loss: 1.0593787596894886
+VAL loss: 1.077926754951477
+AVG acc: 0.6759008383554108
+=====================
+
+=====================
+
+Tamar, and also the seed of Demetrius
+   is there.
+
+   ^12And the countries shall be confounded and seen in heaven that
+   shall be destroyed, and shall be taken in the sight of their God, and
+   the Lord that sent him to deliver it unto the house of Jacob,
+
+   ^12And say, What is my son, the God of my father, which I have sent unto
+   you there will I go, that ye may see the Lord your God, to do it?
+
+   ^22And it shall come to pass, whin ye have drive you forward, and that
+   the Lord hath done against his people Israel, and he hath said in his
+   hand and his house and his heart, I am a man what is to be said.
+
+   ^22And he answered and said, I am the Lord, where he hath not departed? be
+   well weary in the way of the Lord your God, therefore I will do to my lord
+   any man out of his hand.
+
+   ^20And there were some of the children of Asher and Ashtariah, and
+   took the city again of the land of Egypt to sing unto the king, and
+   consumed all the commandments of the Lord their God
+
+Epoch: 32
+AVG loss: 1.0557082883029614
+VAL loss: 1.0778952836990356
+AVG acc: 0.6769057784299806
+=====================
+
+=====================
+
+
+Epoch: 33
+AVG loss: 1.052640603117223
+VAL loss: 1.0736044645309448
+AVG acc: 0.6774808451673895
+=====================
+
+=====================
+
+The children of Israel have not
+   saved them an angel of the Lord to worship them.
+
+   ^12And they shall be a contumption against thee, which shall be the
+   standard of them, and all the foundations of the land shall be a sign
+   of their hands to be dine unto thee, and without an end of wood, and
+   thou shalt be astonished by their own hands, and shalt not deliver
+   them out of the land of Egypt.
+
+   ^12But thou shalt not see the seed af thy people, and thou shalt build
+   them in all mine hands and on an high place of thy finger: thou shalt
+   stretch out thine eyes and thy staves against thee, and will bear
+   thee to be covered, and they shall be their side of any of thine ears.
+
+   ^11And they shall break it, and be the heads of the tent of the house
+   of Israel, and shalt set up the corners of thy sanctuary and the sanctuary
+   of the house of the Lord, and shalt bring them into the cities of Judah
+   and out of Jerusalem.
+
+   ^21Thou shalt bring an offering made by fore unto
+
+Epoch: 34
+AVG loss: 1.050600338305505
+VAL loss: 1.0753711462020874
+AVG acc: 0.678332297096275
+=====================
+
+=====================
+
+
+Epoch: 35
+AVG loss: 1.0496810886938617
+VAL loss: 1.0777368545532227
+AVG acc: 0.6784063679570297
+=====================
+
+=====================
+
+Tobias sent to Jeshua, and said
+   unto him, Whe can she will be as a son?
+
+   ^3And they said, This day is the words of God in the house of
+   Jeremiah, and the seed of Israel will be consent in the land which
+   he hath chossn unto thee.
+
+   ^13And the Lord said unto Moses, Behold, in that day thou shalt not
+   call upon the charge of thy fathers, and the son of Joash:
+
+   ^10And thou saidst unto his brethren, We are come into this place.
+   And they wert to Jerusalem to Bethshia the son of Ahikim, the
+   son of Selem, which is the son of Ahoz, and the priests the sons of
+   Judah.
+
+   ^21And they brake into the hand of the children of Israel, and the
+   captains, and the children of Israel, and the congregation, and the
+   cattle of the children of Israel with them, and the children of Israel
+   that were near against the Lord to bury at the land of Egypt.
+
+   ^2And the Lord spake unto Moses, saying,
+
+   ^2Sent unto the priests, the Levites, and the Levites, that were numbered
+   of 
+
+Epoch: 36
+AVG loss: 1.0474895404757194
+VAL loss: 1.0710148811340332
+AVG acc: 0.6790427924748862
+=====================
+
+=====================
+
+
+Epoch: 37
+AVG loss: 1.0440641918553497
+VAL loss: 1.0689146518707275
+AVG acc: 0.6800948999962717
+=====================
+
+=====================
+
+Thus have
+   Jehoshaphat the son of Nun.
+
+   ^13And the Lord said unto me, What is these that thou doest, that I
+   will say to this master, When thou hast commanded me, that thou mayest
+   speak to thy servants the servants to the Lord our God, and take two
+   and horseman that thou hast sent upon this people.
+
+   ^10And Jeroboam said, Tarry thyself, and let us meet me a company of
+   the chief of the children of Israel, to bury them in a stranger in
+   the land of Canaan, and the children of Israel and Jerusalem.
+
+   ^12And the Lord spake unto Moses, saying,
+
+   ^2Speak unto the children of Israel, saying,
+
+   ^12Saying, Wherefore shell I thy seed from the Lord, that thy master's
+   hand shall be above the first, and thou shalt seek thee and thee, and
+   there shall be a man, wherein is the sight of thy servants thy servant.
+     ________________________________________________________________
+
+    Chapter 22
+
+   The Lord spake unto me, saying,
+
+   ^1Son of man, said the Lord GOD; The
+
+Epoch: 38
+AVG loss: 1.0418583740884404
+VAL loss: 1.0748673677444458
+AVG acc: 0.6806871030690536
+=====================
+
+=====================
+
+
+Epoch: 40
+AVG loss: 1.0408001580047157
+VAL loss: 1.0749108791351318
+AVG acc: 0.680987443985804
+=====================
+
+=====================
+
+Thron, and the cities of Judea,
+   wherein the sons of Jacob had spoken by,
+
+   ^11And they were as the fathers and the possession of them all things
+   and their children as our hearts, they had not another save the people
+   out of all the children of Israel, and their sons together.
+
+   ^10And in those days they commanded, and chose them an hundred
+   cubits broad, and the carcase of the court was over against all the
+   country was fifty cubits, the breadth twenty cubits the cubit of the
+   tabernacle of the congregation.
+
+   ^24The sames that were written in their camp, as the seventh day
+   toward the sea of the top of the sea, the cord of the chapiter were
+   afflicted by the strong core of all the chambers, and the firstfruits
+   of the candlestick was toward the east.
+
+   ^24And the camels, and the sours, and the candlestick was an hundred,
+   thar they went up on the tenth day and to the side of the tent of the
+   court, and the chief priests' sacrifices of the Lord began to b
+
+Epoch: 41
+AVG loss: 1.0390084620635465
+VAL loss: 1.078578233718872
+AVG acc: 0.6813410316014065
+=====================
+
+=====================
+
+
+Epoch: 42
+AVG loss: 1.0362415697495893
+VAL loss: 1.0711002349853516
+AVG acc: 0.6821729516223917
+=====================
+
+=====================
+
+Tarmai.
+
+   ^11And the Lord said unto Moses, Behold, I will bring them out of
+   thine house, and shalt speak to the king of Babylon, saying,
+
+   ^2See me not the son of Aaron and of the children of Israel, which are
+   sore and darkness, therefore will ye be the Lord thy God with thy
+   people, and shalt be ashamed that thou shalt not dream it thee.
+
+   ^13Therefore thus saith the Lord GOD; Behold, I will set them up
+   against thee, and I will build an house upon the land, and shalt be
+   consumed.
+
+   ^11And it came to pass on the seventh day, that the people said unto
+   them, We will be a covenant with them, and the children of Israel is
+   a strange life to them.
+
+   ^11And thou shalt say unto them, Thus saith the Lord of hosts, the
+   Incient bring out again to the city, There shall be no manner of the
+   stranger that is into his hand, when the Levites stand up, that the
+   priests should say, They shall be a silver and silver, and that which
+   was brethren thereof, and the pos
+
+Epoch: 43
+AVG loss: 1.0351781437419496
+VAL loss: 1.0704262256622314
+AVG acc: 0.6824390212741663
+=====================
+
+=====================
+
+
+Epoch: 44
+AVG loss: 1.032100166914598
+VAL loss: 1.0738894939422607
+AVG acc: 0.6834789681125362
+=====================
+
+=====================
+
+The sons of Joseph.
+
+   ^30And they were also with Joseph to sin and willingly told him, and
+   heald his mercy and his sister's house:
+
+   ^22And that there was a companion of wheat to send him to him and
+   to the servants of the Lord they saw his master, and said,
+
+   ^20The Lord said unto him, Thy son is the world to be set over the
+   seed after him.
+
+   ^12But thou shalt not be confounded, but that he may keep thy words.
+
+   ^32And the king of Israel said unto her son, Thou shalt not send a sort
+   into thy sight, and to the merciful to the Lord thy God with thee.
+
+   ^20And thou shalt be a sign unto thee as thou, art the Lord, though he
+   shewed thee that is mighty in thy loiss: and whom thou hast sanctified
+   thee is to deliver him, that he may speak, and to do as a man of
+   thine handmaid.
+     ______________________________________________________________
+
+    Chapter 1
+
+   There was a son of Josiah the son of Josedech. And they said unto him,
+   Thus saith the Lord GOD; Th
+
+Epoch: 45
+AVG loss: 1.030264109443381
+VAL loss: 1.0685288906097412
+AVG acc: 0.6839532461368812
+=====================
+
+=====================
+
+
+Epoch: 46
+AVG loss: 1.0304333483976014
+VAL loss: 1.0735667943954468
+AVG acc: 0.68358252106129
+=====================
+
+=====================
+
+The Lord hath
+   given me that the Lord said.
+
+   ^3As for thee, O man of God, thou hast made thy fellow thy servant
+   the seed of Jacob.
+     ________________________________________________________
+
+    Chapter 10
+
+   A sorrow of the Lord is an heaven, and a fall of a signet of heart.
+
+   ^3Hearken, O Lord, and give us a marriage in the day of my heart,
+   that they may serve thy neme. Selah.
+
+   ^15For thou hast made all the host of thy servants, and to be my
+   servant all the words of the earth.
+
+   ^20Therefore shall they be all the days of the remnant of Israel, and
+   thou shalt not save them from between the house of Israel, neither
+   shall they see the land which they have spoken by their fathers.
+
+   ^10And to the priests the priests said, The Lord, because he hath seen
+   all that the Lord thy God hath spoken by thee, to bring thither unto
+   thee in the land of Egypt. Then he said unto them, The Lord hath given
+   me a charge of the Lord.
+
+   ^21But we will send and to my
+
+Epoch: 47
+AVG loss: 1.0265930338569407
+VAL loss: 1.0682916641235352
+AVG acc: 0.6850639479761979
+=====================
+
+=====================
+
+
+Epoch: 48
+AVG loss: 1.0267505950101141
+VAL loss: 1.0684195756912231
+AVG acc: 0.6848374957324199
+=====================
+
+=====================
+
+Throur
+   thousands are come to the house which is in the high places.
+
+   ^10And he said unto them, What have ye done? to them shall they despise
+   the strength of the earth, and shall stand before their eyes, and
+   shall be comforted for thy nation.
+
+   ^23Then shall thou say unto them, What shall we do this day? And whatsoever
+   he said unto the people, There shall no man be said unto him, Thus saith
+   the Lord; Behold, I am against thee, and I will bring thee into thy
+   house, and thou shalt not see them that shall be saved.
+
+   ^11But if thy father have seen thy servant, he shall not see the
+   servants of thesLord, but he shall be sent to thee into this place,
+   saying, When thy father hath done these to day, and he shall see the
+   manner of thy fathers, and thou shalt say unto me also, I am the
+   Lord that causeth my fathers into my hand, and there shall not be
+   strong an hungred and three thousand men.
+     ______________________________________________________________
+
+Epoch: 50
+AVG loss: 1.0238239836158618
+VAL loss: 1.0749022960662842
+AVG acc: 0.6856180101914225
+=====================
+
+=====================
+
+
+Epoch: 51
+AVG loss: 1.022654561079898
+VAL loss: 1.072925329208374
+AVG acc: 0.6859176124463666
+=====================
+
+=====================
+
+Thus shall
+   ye give them an altar, and bury them.
+
+   ^2And they shall be satisfied with the sword and the congregation of
+   their fathers, when they have no children, neither shall the Lord,
+   serve their God, nor take away their servants their brethren that were
+   near the Lord. And this did their ears be a people to bury their fathers
+   and their fathers, and shall destroy the seed of their fathers.
+
+   ^10And they shall bring their sins upon them in the midst whereof they
+   have dried up their souls in the lind: as the Lord hath sent to destroy
+   them, that their father might do the way that the Lord hath commanded
+   to do.
+
+   ^11But if the Lord have put thy face, thou hast spoken in thine house,
+   and thou hast set thee in the hill, and the Lord thy God hath caused
+   it to pass through the land which he sware unto thy fathers.
+
+   ^3And the Lord shall give thee thy servants the priest the priest that
+   hath bean to build it in the camp toward the east, and thou shalt
+ 
+
+Epoch: 52
+AVG loss: 1.018657663520777
+VAL loss: 1.0723618268966675
+AVG acc: 0.6872210466777379
+=====================
+
+=====================
+
+
+Epoch: 53
+AVG loss: 1.0188659953902353
+VAL loss: 1.0678651332855225
+AVG acc: 0.6869794852188174
+=====================
+
+=====================
+
+Tyus.
+
+   ^30Thou hast made thy son in the mouth of thy son, whose name was the
+   Lovite.
+
+   ^21Thy heart is a sign of thy name, with the hands of thy fathers,
+   that thou mayest be thy son and my son, wherein thou hast done all.
+
+   ^20As for me and these things, as a widow and a stranger, and to do
+   thee alive. And the wicked shall cast hold on his servants.
+
+   ^11And he said, The Lord hath called the second time, and have brought
+   thee unto the heathen and mighty men.
+
+   ^32And he said, What have ye done to you and to you? for the Lord will
+   save you a land, and they shall say, This is the law.
+
+   ^10Therefore thus saith the Lord GOD; Be of my father that he hath
+   dine against thee in the land of the Amorites, and to the king of Babylon,
+   and unto the hand of the Philistines which are carried away captive
+   to the king of Assyria.
+
+   ^12And they said to Josiah, Be of man, all this hands are not there
+   and thee, and that thou mayest do to them, nor do wickedly, nei
+
+Epoch: 54
+AVG loss: 1.018092688805652
+VAL loss: 1.070264220237732
+AVG acc: 0.6874084362303311
+=====================
+
+=====================
+
+
+Epoch: 55
+AVG loss: 1.0164226628137085
+VAL loss: 1.0728404521942139
+AVG acc: 0.6878187778704571
+=====================
+
+=====================
+
+Thus seeketh the poor of
+   the land.
+
+   ^10But if the son of man shall say, The Lord is the wicked that is
+   in the sight of the Lord, and as the living, that he shall be ashamed.
+   Therefore hath the Lord sent him to see his face for ever. Shul shall ye
+   see the covenant of God in him that sitteth upon it?
+
+   ^14And if thou shalt see thy father is come upon him, though he
+   should be saved from thee, to do these things the earth.
+
+   ^14And if the same deed, that they shall be as he that hath the holy
+   thing of the house of Israel, according to all that the Lord hath
+   spoken unto them.
+
+   ^11And when they had said unto them, What man is this day, and the
+   covenant of the Lord commanded him to do these words? we sent me unto
+   them, saying, We have no consent that I will not bring forth the
+   congregation of Israel into the camp of Judah and to the land of
+   Israel?
+
+   ^10Therefore take thee a charge of gold, and an hand at this place,
+   and the face whereof I walk t
+
+Epoch: 56
+AVG loss: 1.0155574233042743
+VAL loss: 1.0706876516342163
+AVG acc: 0.6880360169793075
+=====================
+
+=====================
+
+
+Epoch: 57
+AVG loss: 1.0136532472833149
+VAL loss: 1.0673667192459106
+AVG acc: 0.6885091906308003
+=====================
+
+=====================
+
+Tahar also is
+   bringing them up.
+
+   ^2And he said unto me, Woman, walk in thy sight, that I may see my
+   face for ever.
+
+   ^20And the man said, Wherefore hast thou delivered the people to
+   the house of Israel? and when they saw all the words of the Lord, that
+   they said, The seed is a given, and the Lord hath done all this things.
+
+   ^21And the Lord said unto me, Behold, thy son is at the sea on this
+   side, a man of the house of the Lord, which thou shalt see, till the
+   children of Israel shall do this day to meet them, that they shall not
+   be called by the way.
+
+   ^30And thou shalt set a sacrifice of peace offerings unto the Lord, and
+   thou shalt offer the blood thereof unto the Lord: and thou shalt make
+   him a cubit and his sin:
+
+   ^17And he shall offer a possession unto the Lord thereof; the priest
+   shall offer the peace offerings unto the Lord.
+
+   ^15And thou shalt offer a butnock for a burnt offering, and offer the
+   burnt offering, as the Lord commanded M
+
+Epoch: 58
+AVG loss: 1.0133104767158347
+VAL loss: 1.0696589946746826
+AVG acc: 0.6886737288309718
+=====================
+
+=====================
+
+
+Epoch: 60
+AVG loss: 1.0100135380085908
+VAL loss: 1.0707155466079712
+AVG acc: 0.6896847497742131
+=====================
+
+=====================
+
+Talitis, the captain
+   over his sons and his daughters.
+
+   ^20The fifth day of the seventh month, which was the son of Jehoshaphat,
+   the son of Solomon, the son of Amoz, the son of Jerobam, the son of
+   Menahias, which was the son of Jeshan, which was the son of Abishai,
+   which was the son of Salman, which was the son of Sarai.
+
+   ^2And Joshua the son of Amon came unto his servant, and said, I will give
+   you for a sweet savour unto you, saith the Lord.
+
+   ^10Thus saith the Lord GOD; In that day shall ye deliver you to the
+   children of Israel also, that ye may say, It shall come to pass, that all
+   that are with this people shall stone him, and they shall serve the
+   Lord, that he may serve him, and to his people.
+
+   ^25And if a man be a statute for the people, then the sons of Jadas
+   shall be a priest throughout all Judah, and shall be a son, and shall
+   buy them all the day of the sabbath day, and shall build an altar unto
+   the Lord in the land of Egypt.
+
+   ^25And
+
+Epoch: 61
+AVG loss: 1.0086733180115808
+VAL loss: 1.073866367340088
+AVG acc: 0.6897789045184288
+=====================
+
+=====================
+
+
+Epoch: 62
+AVG loss: 1.0068545001998264
+VAL loss: 1.067517638206482
+AVG acc: 0.6903443897389016
+=====================
+
+=====================
+
+Tahath, which is in
+   the house of Gad and the sonth.
+
+   ^11And he took the sons of Aaron and his sons, to the house of the
+   children of Israel, and said the south of the priest to the people,
+   Thus saith the Lord GOD; Behold, I will cause to come and to thy servants
+   the prophet Jeremiah to prophesy unto the Lord their God, and say,
+
+   ^2The Lord hath done this thing, when he went in to the land which he
+   sware unto them, saying, When ye have not seen this day, te seek the
+   Lord thy God, and his statutes, and his gods, with him in the sight of
+   the Lord, which he hath commanded thee, and to say unto thee, This
+   is all the words of this people Israel.
+
+   ^11And it came to pass in the feart days, that the Lord called to the
+   house of Israel for ever, and the Levites assembled themselves together
+   unto the land that they should die before their fathers to do, when the
+   Lord had said this thing, that they might bring them up to the house of
+   Ishael.
+
+   ^10Then th
+
+Epoch: 63
+AVG loss: 1.007291985429683
+VAL loss: 1.0667834281921387
+AVG acc: 0.6904171708760396
+=====================
+
+=====================
+
+
+Epoch: 64
+AVG loss: 1.0052920030254238
+VAL loss: 1.0683842897415161
+AVG acc: 0.6908352498035386
+=====================
+
+=====================
+
+Thus shall ye break forth in the
+   wilderness.
+
+   ^3And your seed shall be a stranger in the land of Egypt for ever and
+   ever, and to the Lord your God is against you.
+
+   ^24Therefore shall the Lord see this day to deal with him that is in, and
+   he will do all the works that he hath sent unto you, and the Lord will
+   send the sacrifice thereof unto the Lord your God for ever:
+
+   ^24And I will make you all the company of Israel, and your service is
+   consumed by the hand of the children of Israel, as the Lord spake unto
+   the children of Israel.
+     ____________________________________________________________________
+
+    Chapter 13
+
+   And they took them to the city of David, and smote them with the resing
+   of the sea of Sidah.
+     __________________________________________________________________
+
+    Chapter 30
+
+   Now these are the names of the children of Israel, which had made a covenant
+   of the Lord, with the house of Israel, and out of the tabernacle of the
+   co
+
+Epoch: 65
+AVG loss: 1.0041605537089537
+VAL loss: 1.0698387622833252
+AVG acc: 0.6913104500832423
+=====================
+
+=====================
+
+
+Epoch: 66
+AVG loss: 1.003974503855098
+VAL loss: 1.0687336921691895
+AVG acc: 0.6911396441875763
+=====================
+
+=====================
+
+Tabars, and Jehoiada the
+   son of Ahab, and Joseph's son, and his sons, and the high priest,
+   and his sons also at her towns, and their chariots.
+
+   ^13And they took their cattle, and put them on them with their vessels
+   there, which they went to the captivity that were in Bethel, which
+   arose up against the city of Devid.
+
+   ^10And the children of Israel went up to the children of Israel, that they
+   would not tern from the sand of the Lord, being another servant unto
+   their fathers the priests.
+
+   ^14And the Lord said unto Moses, Say unto the children of Israel, Ye
+   shall not destroy the children of Israel, neither shall ye be afraid, nor
+   take the burnt offering, and the priests of the Lord.
+
+   ^30And the Levites and the chief of the fathers of the children of
+   Israel said unto him, Take the bread thereof, and thy soul with
+   his flesh, and the sorrow, and his sons, and thy fathers'
+   house, and thy children, and the captain of thy servants,
+
+   ^25And the congr

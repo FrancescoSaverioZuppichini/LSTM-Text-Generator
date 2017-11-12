@@ -1,0 +1,629 @@
+================
+Model layout:[512, 512, 512]
+Data: ./data/shakespeare
+Sequence len:    40   
+Learning rate:  0.001  
+Batch size:    64   
+Dropout: 1.0
+================
+output-12:40:23.txt
+Data size: 5283795 
+N classes:    80   
+N batches:   2063  
+N epochs:    30   
+Start at: 12:40:26
+
+Epoch: 1
+AVG loss: 2.2614327729817334
+VAL loss: 1.6498780250549316
+AVG acc: 0.3563821724319394
+=====================
+
+=====================
+
+
+Epoch: 2
+AVG loss: 1.8070728559836102
+VAL loss: 1.5068260431289673
+AVG acc: 0.46359557774363935
+=====================
+
+=====================
+
+THERSET	Why, sir, I say the strange of his sent
+	Then we should break a pown and so so many.
+	This in the soul and soul of the soul of me,
+	That thou said brother, to the state of the words
+	And there that wast a stranger of the strong
+	And so the pownr of the son of his part,
+	To the such as a state of her son stay,
+	And that to have to the world and the son of things,
+	The strange of him that was thy father's pate
+	As the precent of the want and troubless shore,
+	That the world beauty to the soul of him.
+	That say thou should have say and the souls stay
+	The statious of the warld and searth of me,
+	And there is not and see the wind of the son,
+	And then thou wilt'st not be a stranger shall
+	That we see their son and the son of his body,
+	To the poor souls and see thy state, and
+	The sun and the poor prectine of the stare,
+	The word and soul of the son on the world
+	And so to the sun of their saint the strong,
+That which thou saids the state of their strong
+	As the soul soul and true, 
+
+Epoch: 3
+AVG loss: 1.6993940969260064
+VAL loss: 1.4619933366775513
+AVG acc: 0.49034042145751716
+=====================
+
+=====================
+
+
+Epoch: 4
+AVG loss: 1.6447649422168038
+VAL loss: 1.431047797203064
+AVG acc: 0.5040903085363299
+=====================
+
+=====================
+
+THERSITES	A mortal of the world of him.
+
+	[Enter CLARENCE, and SIR ANDREW]
+
+	[Enter CARDINAL WELSEY, and PRITEUS and SIR HUGH EVANS]
+
+	[Enter DESDEMONA, and SEBASTIAN]
+
+CORIOLANUS	The stranger of the streets of the street of him.
+	What says the more of this? When I did serve her,
+	The subjects of the warl of this disposed
+	That strongs their proclamity and such a stars,
+	And then the world of his son of their body,
+	That they shall seek him with thy state of heart.
+
+	[Exit]
+
+	[Re-enter DON PEDRO where they shall bear thy son and the world
+	and the stroking to the cause, the bosom of the
+	stars of his sounds the service of their son and the
+	carest of the way of the state on his fortunes, and
+	the bosom of this service to the world of the cause of
+	the wind of him.
+
+	[Exit]
+
+
+
+
+	THE MERCHANT OF WINDSOR
+
+
+ACT I
+
+
+
+SCENE II	Another castle.
+
+
+	[Exeunt CLARENCE, SIR ALDREW, SEBASTIAN, and Attendants]
+
+CASSIO	The greatert of the world the ground of
+	his princes, that he should be to the subje
+
+Epoch: 5
+AVG loss: 1.6138834812314085
+VAL loss: 1.4144847393035889
+AVG acc: 0.5118770581740981
+=====================
+
+=====================
+
+
+Epoch: 6
+AVG loss: 1.589406850958587
+VAL loss: 1.3968387842178345
+AVG acc: 0.5178093334828773
+=====================
+
+=====================
+
+THERSHEES	(BURGUNDY:)
+
+BARTARDS	|
+
+
+	To this in Bardolph and Servant.
+
+	The Duke of Balbary the care of Salisbury,
+	And so shall be the world of Edward's hand.
+
+KING HENRY V	Well, sir, there is no more as the sea forth.
+
+	[Exit]
+
+
+
+
+	KING HENRY V
+
+
+ACT III
+
+
+
+SCENE III	The same.
+
+
+	[Enter CAPULET, and SALISBURY]
+
+PRINCE HENRY	This is the state of the world of the world of his
+	son, and therefore shall I be a sense of the wars.
+
+PRINCE HENRY	I am a soul of thee, the word is the world of the
+	state, as thou art too serviced and the word of
+	the state of their parts and service that hath a service
+	to her to the world that have seen the world of her
+	charge and something to be some season of his soul
+	to the warlike a service. There is a servant of the woman
+	of this present and the seas of the word of
+	the streats as thought they say to be a sensel to
+	the world of the state and the world. I will
+	shall the street of the world of his servant that
+	the will be so shore to the warlike a sta
+
+Epoch: 7
+AVG loss: 1.573213524455534
+VAL loss: 1.3867377042770386
+AVG acc: 0.5221508946080146
+=====================
+
+=====================
+
+
+Epoch: 8
+AVG loss: 1.5612799795403158
+VAL loss: 1.3835034370422363
+AVG acc: 0.5252509006180349
+=====================
+
+=====================
+
+THE PERLY OF AUMERLE
+
+
+	A Duke of Wales, the Duke of Suffolk's sight,
+	And see thy father was a service of heart,
+	And the devil of this, and to their propers
+	The part of heaven and sometime of their princes,
+	And shallow thee that they shall bring the state
+	And the dead son and the suns that they shall be so.
+
+	[Enter CLEON and SIR ANDREW]
+
+	How now, where is this man to tell my life?
+
+	[Exit]
+
+
+
+
+	KING LEAR
+
+
+ACT I
+
+
+
+SCENE II	Another part of the field.
+
+
+	[Enter PAROLLES, and Servant]
+
+SIR TOBY BELCH	I will not say I would not see thee to thee.
+
+SIR ANDREW	I will, sir, I will be survey to be a soldier.
+
+FALSTAFF	Why, here comes here, sir.
+
+FALSTAFF	I am sure your lordship is a good master to your
+	patience and the properties of your hearts than
+	your lordship in this will and makes you a most
+	service of the stare of the strange. I will be a
+	part and service to your lordship.
+
+FALSTAFF	I would have said the world in his sense is the matter of the
+	sea and this should be a service 
+
+Epoch: 9
+AVG loss: 1.5480088213376495
+VAL loss: 1.3800076246261597
+AVG acc: 0.5284781481418804
+=====================
+
+=====================
+
+
+Epoch: 11
+AVG loss: 1.5368445608376649
+VAL loss: 1.3688313961029053
+AVG acc: 0.5314745833095971
+=====================
+
+=====================
+
+THAMIANO
+
+
+ACT V
+
+
+
+SCENE I	The same. A room in Capulet's house.
+
+
+	[Enter PAROLLES and Servingman]
+
+CASSANDRA	I have so soundly to my son and straight.
+
+CYMBELINE	I have a shoulder than the sun to me.
+
+	[Exit SIR ANDREW]
+
+	I will be seen you to the people of your head.
+	The moon the man and men and many offences,
+	To the contemple therefore should your life,
+	Which I will see the chamber of the wars,
+	That I have heard the world to seek your head.
+
+CLARENCE	There is a son and sound as the most prince.
+
+SILVIA	I have no matter in the sea of this;
+	The sun as I am sorry to thine ear.
+
+SUFFOLK	I hear my lord to make the chamber than
+	The princely parts of true constraining state,
+	And so my life, the sun and treason stays.
+
+KING	The summer of the sense of men's and men,
+	The part of the streets of my protectors
+	Which is thy prince and the consent of me.
+
+CASSANDRA	The master of my lord, I'll stay again.
+	I would not see you to you.
+
+PERICLES	I will seem so many master in their presence
+	
+
+Epoch: 12
+AVG loss: 1.529759038320977
+VAL loss: 1.3613331317901611
+AVG acc: 0.5334470212257318
+=====================
+
+=====================
+
+
+Epoch: 13
+AVG loss: 1.5214775819195976
+VAL loss: 1.3624939918518066
+AVG acc: 0.5354452127978112
+=====================
+
+=====================
+
+TREIS CAESAR:
+
+	And when they were to see, and then the world,
+	To stay a prince to bear the common life,
+	And see the world and sounds the warlike lords,
+	And there the better shall be seen a man
+	That hath a subject than they shall not see.
+	There was too straight to still as hate to hear.
+
+	[Exit CARDINAL WOLSEY]
+
+	I would he seems as without, as I would
+	Is not to be than so much too much and so
+	As well as the cardinal. This is no such
+	And so she will be true and seem to see.
+
+	[Enter CASSIO]
+
+	The sun is so much as a son as they
+	That will be so much to be so much been.
+	I will be so advance to be a son,
+	And shall be seen to see her.
+
+CASSIO	If you say she is, as I would see
+	That, but I will not break the world an earth,
+	That you should be the world of this desire.
+
+CARDINAL WOLSEY	I have not so beholding to myself,
+	To be a marriage to the sea, and to be so.
+
+DUKE VINCENTIO	I hope the world is not a more and bound,
+	As I, and set her word and see this stream,
+	And so that sha
+
+Epoch: 14
+AVG loss: 1.5145341706287496
+VAL loss: 1.3673243522644043
+AVG acc: 0.5372866220226926
+=====================
+
+=====================
+
+
+Epoch: 15
+AVG loss: 1.5091814971120394
+VAL loss: 1.3681384325027466
+AVG acc: 0.5385240121368523
+=====================
+
+=====================
+
+TREY, BAPTISTA,
+	and others]
+
+BAPTISTA	What says your honour?
+
+CRESSIDA	Why, there's no strength of thee.
+
+CASSIUS	Well, I will stay to this. I will not be such
+	as an answer than the sun will not see the country
+	of a more to the court.
+
+PORTIA	I will not say to bear them and so too. If, I would not
+	be sad, to break the witness of the country and the
+	sun, the wine is a man of the cause to the country
+	of the company of a bottom that's a strong and
+	thing that thou art not a solemn contract to take thee
+	the world that thou art not a stranger than a
+	care of thy face.
+
+Second Soldier	I will say I'll not be a man. To be a man to
+	the wars, the care is the way they say the cause that
+	should bear the sea and to be a controry than the
+	counsel of the sea-should not see them that hath a
+	controry to the sea of the company.
+
+Second Lerd	There is no more than a mark on the cause of the world.
+
+SIR ANDREW	Why, there was a soldier to take the woman of the
+	cause of any thing.
+
+BOTTOM	If I saw
+
+Epoch: 16
+AVG loss: 1.5023936071386628
+VAL loss: 1.3535199165344238
+AVG acc: 0.5404841417371793
+=====================
+
+=====================
+
+
+Epoch: 17
+AVG loss: 1.500178969836732
+VAL loss: 1.3561818599700928
+AVG acc: 0.5410544570938106
+=====================
+
+=====================
+
+THR PORT	A mark of the soul of men that was a stranger
+	of men than all the world are so much off to be the most
+	charge.
+
+DON
+ADRIANO DE ARMADO	And though I see thee, sir, I will not see
+	my service and the state of thee as the
+	servants of my soul, as thou wilt not see thee. To me,
+	the world is the man of the state of a strength, thou
+	shalt have thee the most state. If thou wert
+	the more then thou art a man, the world was
+	there to see too little as too much of the streets
+	of the state of thy servant. I would not but a man to tell me.
+
+COSTARD	Ay, masters, the wine, as the world's a solemn father, and
+	to be such a man of my sense. If the world should
+	stand to take the forest the state of a marriage,
+	to take him that the wars will be some thing in his bosom. There is
+	that I am not that I have.
+
+Second Lord	I would not this is to see his head to bring him a word.
+
+	[Exit]
+
+Second Soldier	Ay, sir.
+
+Second Lord	What, are you?
+
+First Servingman	I will not see the son the state that
+
+Epoch: 18
+AVG loss: 1.4961246923515072
+VAL loss: 1.3512370586395264
+AVG acc: 0.5422263342491701
+=====================
+
+=====================
+
+
+Epoch: 19
+AVG loss: 1.490250092077417
+VAL loss: 1.3548963069915771
+AVG acc: 0.5437151771752047
+=====================
+
+=====================
+
+TREISONUS,
+	And thou art never so much of my head,
+	That thou hast beat thee to thy hand the state
+	That I'll be more a man to thee and see,
+	That thou hast stand a mouth on thee. If thou hast seen
+	Thy state of this and thou shalt have me send
+	The fortunes of my son, and to the sea
+	That I have sent to stay a soldier to me,
+	And then to see thee that I have thee honour'd,
+	Though I be thought to be as such a strange
+	To see my soul as many and my life
+	To seek my hands and thou art so much made,
+	Than thou art not a stone that the sun was
+	That I have been a stock of the strength, as thou
+	art not a man, and thou art a man to the worse of
+	men as I had a man to thy hand.
+
+PAROLLES	I will stay a song to my soul.
+
+COSTARD	Thou shouldst be the market-bargain of thy strength,
+	and thou shouldst have made me the wars of
+	my stature. Thou art not a story of the
+	service, thou'rt a monstrous man, and to be the
+	part that thou shalt be a strong and thou art a
+	songle as thou art never. What i
+
+Epoch: 21
+AVG loss: 1.4848493624242023
+VAL loss: 1.351799488067627
+AVG acc: 0.5452013708871369
+=====================
+
+=====================
+
+
+Epoch: 22
+AVG loss: 1.4824680566094306
+VAL loss: 1.3423311710357666
+AVG acc: 0.5456881850192227
+=====================
+
+=====================
+
+TREIS BELANG:
+
+		|
+DICK	|
+	|
+LENNOX	|
+		|  the Lords of Cloten.
+
+	A Servant. (First Servingman:)
+	(Servant:)
+	(Second Lord:)
+	(First Senator:)
+	(Second Lord	)
+	(First Gentleman:)
+	(Serond Gentleman:)
+	(First Servant:)
+
+	Third Gentleman:)
+	(First Gentleman:)
+	(Second Gentleman:)
+
+
+
+SCENE	Troilus.
+
+
+
+
+	THE TWO GENTLEMEN OF VERONA
+
+
+ACT III
+
+
+
+SCENE III	The palace.
+
+
+	[Enter CARDINAL WOLSEY and SALISBURY]
+
+FALSTAFF	The son of Cornwall and the power of Barquon shall
+	be a stone to her an angry, and the poor man
+	was a soldier, and he is no more than they were a
+	man to their parts the sea of the prisoner.
+
+FALSTAFF	What is the matter?
+
+FALSTAFF	What says he?
+
+FALSTAFF	I am a strange too woman, there is, and the world that he
+	was a monstrous son. Well, I will see this word.
+
+FALSTAFF	I will not be some of the poor man than the prince and my
+	son to him.
+
+SIR HUGH EVANS	I will speak to your grace.
+
+SHALLOW	A privilege of my soul and to be so soon an her
+	wife, and there was a poor face of hi
+
+Epoch: 23
+AVG loss: 1.4778397638013048
+VAL loss: 1.3429133892059326
+AVG acc: 0.5472075130196375
+=====================
+
+=====================
+
+
+Epoch: 24
+AVG loss: 1.4752018590951161
+VAL loss: 1.3482780456542969
+AVG acc: 0.5477835093952185
+=====================
+
+=====================
+
+TREILUS and AUDREY]
+
+	To say I would have sent the court that I have seen
+	The service of the service of the wars,
+	And that's a most poor face. Therefore to thee.
+
+	[Enter DEMETRIUS]
+
+	[Re-enter ANGELO]
+
+	[Re-enter PERISLES]
+
+	[Enter PANDARUS]
+
+	Here comes the senate.
+
+	[Enter PAROLLES, with a propertion]
+
+CASSIUS	I would he had a man to seek his son,
+	That him and shall be so and shallow thanks
+	And set his hands and stands and strike his soul.
+	If they have seen him then, and then, an honour
+	That shall have stay'd to her to see him to the stream,
+	And she will be as he is to be so.
+
+CORIOLANUS	I would he shall. To the cardinal,
+	That will be to be so deserved at him.
+	If the be so the wind, I shall not hear her,
+	And then to stay to see this servant's head.
+
+CASSIO	I would have seen him than his friends we shall
+	See his and servant to the cardinal.
+	I would he should be here the sun to strike her,
+	And then the state was so to be a man
+	To see him so to see his heart as he
+	That sh
+
+Epoch: 25
+AVG loss: 1.4727370675420275
+VAL loss: 1.3488669395446777
+AVG acc: 0.5483901828917496
+=====================
+
+=====================
+

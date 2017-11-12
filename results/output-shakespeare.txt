@@ -1,0 +1,2210 @@
+ ================
+Model layout:[512, 512, 512]
+Data: ./data/shakespeare
+Sequence len:   100   
+Learning rate:  0.001  
+Batch size:    64   
+Dropout: 0.8
+================
+output-23:50:17.txt
+Data size: 5283795 
+N classes:    0    
+N batches:   825   
+N epochs:   100   
+Start at: 23:50:20
+
+Epoch: 1
+AVG loss: 2.5411150712677926
+VAL loss: 1.7944847345352173
+AVG acc: 0.29671114226972517
+=====================
+
+=====================
+
+
+Epoch: 2
+AVG loss: 1.9372668640541308
+VAL loss: 1.578656554222107
+AVG acc: 0.429306957468842
+=====================
+
+=====================
+
+Toouky:
+
+Second Good Coldon	That is not seek them.
+
+	[Re-enter SOMIOLINA and PARDIAN]
+
+	To tell you shall be stander to my seath
+	That which the mast as a stair of thy prockess
+	The stang is to the such of my see that,
+	And therefore, thou sath thou that take to some
+	Thou sheartst my lord.
+
+	[Exit]
+
+	[Exit]
+
+
+
+
+	TRE METH PEISSA
+
+ACT III
+
+
+
+SCENE I	A partan.'
+
+
+	[Enter SIR TOBY BELCE, and BALINAN,
+	and ARIEL]
+
+	How nat, a mades, as this to my strange,
+	And thou art thou art ment and thought he seak,
+	And shall thou art the stort therefore another
+	Then that thou art my soul she would be storn
+	With mertary, though to-make and sentless break,
+	That we will sould he to my from my soul.
+
+BASTINGE	Then to her trumpes, that they should not strange.
+
+	[Ritire]
+
+	And thou, she with the store, the master truth
+	There is the waster tooks, as thou do shall,
+	To said the witter word of than the strace,
+	With their start of the winds to the such own,
+	As the subjose and their price or his streath.
+
+
+Epoch: 3
+AVG loss: 1.782082821672613
+VAL loss: 1.5077507495880127
+AVG acc: 0.46893745024998984
+=====================
+
+=====================
+
+
+Epoch: 4
+AVG loss: 1.7055310548435558
+VAL loss: 1.4692823886871338
+AVG acc: 0.48858252839608624
+=====================
+
+=====================
+
+The broken of the winds,
+	Which is too mark of heart of many shores,
+	As we have stop'd to say as she will
+	Hear the world of men to that this hands
+	The sun and stare and tale of this so store,
+	And seek their charges and then all the ward,
+	To see their sons, with the state of his horse,
+	A partare as a course of thou art fortunes
+	That she says stirl, the match of them are sent,
+	We'll hear the sun of this the casting son.
+
+	[Exit]
+
+
+
+
+	THE MERCH WING OF TIRE
+
+
+ACT II
+
+
+
+SCENE II	The came. An an arms.
+
+
+	[Enter SERISBURY, CARDINAL and PAGE]
+
+CASSIUS	That we should bear the company. What is this tongue?
+
+Second Gentleman	Then, that he will not be a sound of his friends.
+
+KING HENRY V	I am assaid and heard the sun of her
+	That he was bode on this stare of my stand,
+	And to the seal are prince of the worst,
+	That he would seem the chambing, though they have hence
+	As to and sour to say and have a store.
+
+	[Re-enter BRUTUS and ARTINAGUS]
+
+DUKE SENIOR	What is the man? I was as heavy so so
+
+Epoch: 5
+AVG loss: 1.6609161772872463
+VAL loss: 1.4480879306793213
+AVG acc: 0.49994313482082253
+=====================
+
+=====================
+
+
+Epoch: 6
+AVG loss: 1.6274760954307788
+VAL loss: 1.4218374490737915
+AVG acc: 0.5083800702022784
+=====================
+
+=====================
+
+THANLES	(TIMON	and Servants]
+
+KING LEAR	This is the streets of temper'd son to heaven
+	That shallowed so service.
+
+	[Re-enter MARK ANTONY, with the company of
+	the walls, and others to his comfort, and of
+	his commendable]
+
+	[Enter a Master]
+
+	The woman was not all and have the cause.
+
+KING RICHARD II	The worle will be, an all the castle seems,
+	To seem the war of my body to the world.
+
+BRUTUS	There should break thee that I will see them far.
+	If they shall had him trank thee where the mother,
+	That I and sounded it it to the court.
+	I would not thenk my life. I will be great thee,
+	The womal will not speak.
+
+	[Enter all the DUKE OF AUMIRLE]
+
+		     Will they say thou,
+	Thou say'st these sons that take him to the wife.
+
+KING HENRY VI	Ay, madam; as the matcher of my lady
+	I shall not have a son, whose wars that see me
+	In heaven and traitors of the wine, we have,
+	Than shall be made anon.
+
+CORIOLANUS	I will be sent
+	The cause to bear a man as some a fool,
+	That stones his soul and string
+
+Epoch: 7
+AVG loss: 1.6071670864567613
+VAL loss: 1.4019192457199097
+AVG acc: 0.5132355610890822
+=====================
+
+=====================
+
+
+Epoch: 8
+AVG loss: 1.588391834605824
+VAL loss: 1.397311806678772
+AVG acc: 0.5181293121612434
+=====================
+
+=====================
+
+TAVIUS CAESAR,
+	|
+MERCATIO	|
+	|           Where's the war?
+	Where is the sun? where is the story?
+
+SIR ANDREW	I have seen me, I had said to take a man, a son
+	and the sea, and hath a state, to the state and
+	short a stone of the sentence of his soul, that they
+	say, she said the suns of my son. What is the world
+	of the substance? I had sated, that you heard
+	them then to-morrow with the season. I am a shoulder
+	with the winds; the maid of the charge and twenty
+	the sea, as the sense of thine own service, to
+	take his souls and the will, and any thing the
+	pooter of the wild and he shall have the part of
+	the world, and the pardon there it will brought the
+	chamber of her serving the sorrow of her.
+
+DESDEMONA	I was not a solemn and to spend to the world.
+
+Second Gentleman	I have thought him to the stock. This, in the
+	port of his senation and many of his, and so
+	service to her to the ways.
+
+SHALLOW	We are no more to the story, though I hove her a
+	mind of the court of him: there were t
+
+Epoch: 9
+AVG loss: 1.572566110871055
+VAL loss: 1.3909592628479004
+AVG acc: 0.5220440860950586
+=====================
+
+=====================
+
+
+Epoch: 11
+AVG loss: 1.559077356222904
+VAL loss: 1.3881289958953857
+AVG acc: 0.5256660573410266
+=====================
+
+=====================
+
+THESEUS	(THE SONT:)
+
+DUKE FENDERBERY	|
+	|  a streets. (Caesar:)
+		|
+CONNTESS	|
+	|
+CARDINAL CAMPEIUS	a pain on Claudio. (CARDINAL WOLSEY: a Cordorita.
+
+
+	[A thought of his conscience.
+
+	Third Servant	(		|
+CERIMON	|
+	|
+SIMONIDES	| 	|
+	|
+CELIA the Captain.
+
+	The French cappain to trouble.
+
+SUFFOLK	an old Servant and the Dauphin's commendations at his sight.
+
+SIR HUGH EVANS	I wish your master the servant.
+
+CONRADE	A prince of Eleanon, and he was not tried.
+
+FALSTAFF	I am not to this same, I would not have a soul that I
+	will seek that, and I'll see you than the prince are not
+	a point, and there is not more than a man that
+	he would not hear her a man as you seem.
+
+SHALLOW	I was never-born to the sea that you are all.
+
+SIR TOBY BELCH	I am no man, and I will be so such as a man as I will not
+	shall then shall be so sure the most point of the
+	poor sounds, the morning they warrant them out of the
+	son of his son and his soul.
+
+SIR TOBY BELCH	Will you see her true? why that's he was? I'll see
+
+
+Epoch: 12
+AVG loss: 1.5499936509854866
+VAL loss: 1.3744412660598755
+AVG acc: 0.5277274189934587
+=====================
+
+=====================
+
+
+Epoch: 13
+AVG loss: 1.540039725448146
+VAL loss: 1.3764234781265259
+AVG acc: 0.53062571348566
+=====================
+
+=====================
+
+THERSITES OF VERONA
+
+
+DUKE OF VENICE	(SUFFOLK:)
+
+LADY CAPULET:)
+
+	A Servant to Clifford.
+
+	A Solaier on this stand. (SIMPNOX:)
+
+SHYLOCK	|
+	|  to Clifford of Claudio, the Duke of Caesar.
+
+	A Soldier and the state, to Priam Cassio, attending.
+
+	A sea of the sea, and soldiers and the cause.
+			         How! they say! how so my life?
+
+	[Re-enter CLAUDIO]
+
+CADE	I would have thee to be to tale, that I hear
+	him to be any more of the count and to stand
+	at his body. I hope you say, this said the man of
+	the world the summer is the strange of an angry
+	son.
+
+SHYLOCK	That it is a man to be true.
+
+SICINIUS	Why, this is the man. I have been a fair sense,
+	and she is the wild, the store of the sense, which
+	they shall bear, to break a woman and to bear him a
+	state as he shall see him.
+
+MARIA	It is a subject, a sweet cause that you have seen her
+	to the sea of the wall of the sun, that which I
+	will not have him be seen to this.
+
+First Citizen	What said you what they see?--
+
+MALVOLIO	To the womb, a
+
+Epoch: 14
+AVG loss: 1.5313787447322498
+VAL loss: 1.374117136001587
+AVG acc: 0.5327349965500109
+=====================
+
+=====================
+
+
+Epoch: 15
+AVG loss: 1.5252045210925016
+VAL loss: 1.3769090175628662
+AVG acc: 0.5341429495811463
+=====================
+
+=====================
+
+TOBY and LUCIUS]
+
+CARSINAL WOLSEY	True mother! I would have but start of thee
+	To the cause of thy soul and strong a soul,
+	Whose story was too long and took their sight
+	As I have start to talk that I have been
+	A stranger of this cause of such a soul,
+	Than to the strange of this shore shallow heart.
+
+KING RICHARD III	And what thou wast the strange that stretch'd thy face
+	That thou shouldst spoke to stand and thou and this?
+	Why, then I was too stranger and their heart,
+	We will be frown'd, thou shalt not see the worst.
+
+BASTARD	And what thou wast not so to the court?
+
+Second Lord	It was the star where I have burned him from.
+
+	[Exit]
+
+
+
+
+	TIMON OF ATHENS
+
+
+ACT VI
+
+
+SCENE II	The same. A street.
+
+
+	[Enter SIR TOBY BELCH, SAMIRINS, and others, and
+	others, and Soldiers]
+
+COSTARD	If the sun with them any shall see themselves, and ther
+	is too sure, and therefore so say I.
+
+FALSTAFF	If't say thou, my lord, I was not so fortune. I
+	have saided him, and then that I'll take thee, to
+	thou s
+
+Epoch: 16
+AVG loss: 1.5173046497865157
+VAL loss: 1.3654502630233765
+AVG acc: 0.5363713609088551
+=====================
+
+=====================
+
+
+Epoch: 17
+AVG loss: 1.513720169500871
+VAL loss: 1.364936351776123
+AVG acc: 0.5374783665483648
+=====================
+
+=====================
+
+THUMIN  OF AUMERLE,)
+DORDENIUS	|
+ |  a song of the Daughter. (Soldier:)
+	(Second Gentleman:)
+	(First Soldier:)
+	(Fairier:)
+	(Second Soldier:)
+	(Second Lord:)
+	(Second Gentleman:)
+	(Fester Servant:)
+	(Second Serving-Man:)
+	(Third Servant:)
+	(Second Gentleman:)
+	(Second Servant:)
+	(First Gentleman:)
+	(Second Lady:)
+	(Third Gentleman:)
+	(Second Gentleman:)
+	(First Gentleman:)
+	(Tiron:)
+	(Second Lady:)
+	(First Gentleman:)
+
+	A Petitioner:)
+	(First Commoner:)
+	(Second Servingman:)
+	(First Gentleman:)
+	(Second Servant:)
+	(First Gentleman:)
+	(Second Gentleman:)
+	(First Gentleman:)
+	(First Senator:)
+	(Second Servant:)
+	(Third Gentleman:)
+	(Third Gentleman:)
+	(Second Sentingman:)
+	(Third Senator:)
+	(First Gentleman:)
+	(Second Gentleman:)
+	(Second Servingman:)
+	(Second Gentleman:)
+	(Third Guard:)
+
+(Second Gentleman:)
+	(Ferst Lord:)
+	(Second Gentleman:)
+	(First Catizen:)
+	(First Gentleman:)
+	(Third Gentleman,)
+	(Third Servingman:)
+
+	The Serviceman. (Second Servant:)
+	(Second Senator:)
+	(Second Serv
+
+Epoch: 18
+AVG loss: 1.5092804313428474
+VAL loss: 1.3688929080963135
+AVG acc: 0.5384154871015838
+=====================
+
+=====================
+
+
+Epoch: 19
+AVG loss: 1.5025225844527736
+VAL loss: 1.35825777053833
+AVG acc: 0.5400293139255408
+=====================
+
+=====================
+
+THENSHIET	(SAMPRIN:)
+
+SIR TIBY BELCH	the Duch of Bardallo,
+a Mordiners to Saint France.
+
+
+
+
+	ANTONY AND CLEOPATRA
+
+
+ACT III
+
+
+
+SCENE III	A room in the field.
+
+
+	[Enter, the BRUTUS and CATHSBY]
+
+COMINIUS	I am a minute of my soul as you
+	Which the disgrace oftyour son would not speak.
+
+	[Exeunt]
+
+
+
+
+	THE MERRY WIVES OF WINDSOR
+
+
+ACT I
+I
+
+
+SCENE VI	A street.
+
+
+	[Enter PERICLES and SURVELIUS]
+
+MENENIUS	Why did I thank you? take me to my lord,
+	And yet you were a man of that I hate.
+
+PERICLES	I hade to have the pastual of my heart,
+	The pain is thine.
+
+PROSPERO	Thou art too much as then, and we are nothing;
+	And then, I say I have as honour hither.
+
+CORDELIA	I will be so so fair in his dishonour.
+
+PERICLES	I will not stand to make my life to tell me;
+	I am a general and the strange assailt
+	To see my sourier.
+
+POMPEY	Well, shall I deal the season then,
+	With a man's poor begat, the sun that holds
+	This mountain things. Why, then, the sun is so.
+
+	[Exeunt PROSPERO and SICINIUS and SUFFOLK and
+
+Epoch: 21
+AVG loss: 1.4953423351230044
+VAL loss: 1.3530139923095703
+AVG acc: 0.5419503372365778
+=====================
+
+=====================
+
+
+Epoch: 22
+AVG loss: 1.4940931726224496
+VAL loss: 1.3448665142059326
+AVG acc: 0.5423700347091213
+=====================
+
+=====================
+
+TONCHSTONE	Thine eyes, and then to stop my son and strife.
+
+KING HENRY VI	The march of these are comforts, wills, and lives,
+	And will be sure to see the prince to heaven;
+	Therefore, I will not, when thou seest not well.
+
+	[Re-enter BERTRAM]
+
+KING RICHARD III	What should I stay to this?
+	What, what shall I be sure to speak with me?
+	To-morrow that they were a solemn part,
+	That we arrive her, to this proper pride,
+	And there is never seem'd to set the parley
+	That have been treacherous an honour blood.
+
+SIMPCOX	And that we say that we shall break that hell,
+	Which was now true a mortal to the crown.
+
+SUFFOLK	What, wouldst thou stand an honest meaning to?
+	What way'st thou think, then where I shine on him,
+	A man as made a star of honour's daughter?
+
+KING RICHARD III	Who shall have been so more than when I shall,
+	And what he did not see the sun and truth
+	To the story of his soul to the princess deed?
+	We have a pain of this deserving man
+	That he would be train'd to the servant true;
+
+
+Epoch: 23
+AVG loss: 1.4879301602912671
+VAL loss: 1.352279543876648
+AVG acc: 0.5441187067465348
+=====================
+
+=====================
+
+
+Epoch: 24
+AVG loss: 1.4855504720861261
+VAL loss: 1.348112940788269
+AVG acc: 0.5449098048788128
+=====================
+
+=====================
+
+THE PURTNY, PARDINAL:
+
+
+DOMITIUS ENOBARBUS	The man that says he holds, he'ld see his force
+	To be assured with that his house assembles,
+	We have seen him from my heart to speak and be
+	The strength of honesty is to succeed
+	To see him so. I have been an officer,
+	And see him see a wind to borrow him.
+	Then who says he that have a sorry strange
+	That hours it with him wherein she did have
+	With heart and sorten story of the world?
+	The strange arm of this constancy as this
+	Which they are tooking to the cause, which he
+	Will not die were.
+
+PROSPERO	I would not then be sent
+	To see thee well, and then thy fortune sees.
+	I am not thank'd, and well myself am not.
+
+	[Exeunt]
+
+
+
+
+	AS YOU LIKE IT
+
+
+ACT V
+
+
+
+SCENE IV	A public place.
+
+
+	[Enter PETRUCHIO, attendants]
+
+CLEOPATRA	I am sorry to the pains of my soul stars.
+
+	[Exit]
+
+CORIOLANUS	We'll see your hearts of him. The beast way heard,
+	The power is touch'd with this and here asleep.
+	The gentleman is sent, the beauty of my love,
+	We seem to
+
+Epoch: 25
+AVG loss: 1.4807235567497485
+VAL loss: 1.3472819328308105
+AVG acc: 0.5461543149659128
+=====================
+
+=====================
+
+
+Epoch: 26
+AVG loss: 1.47600485570503
+VAL loss: 1.3443971872329712
+AVG acc: 0.5472607532414523
+=====================
+
+=====================
+
+THUMOS OF ORLEANS:
+
+LEWIS	seven of the star and the senators of the court
+	of the careinar to the child.
+
+
+
+
+	THE MERRY WIVES OF WINDSOR
+
+
+ACT III
+
+
+
+SCENE II	The same.
+
+
+	[Enter PAGE, MONTAGUE, BISTOL, BENEDICK,
+	and Soldiers]
+
+MISTRESS QUICKLY	That was the matter on your lady here?
+
+FALSTAFF	I will say, sir. What is't hath satisfied him
+	that the cause was a man of the state?
+
+FALSTAFF	To have a sea o' the world then, I have been a
+	street of all his hands, which is there as too
+	man in his heart will be set at their souls.
+
+	[Exeunt PAGE, and PRROLLES]
+
+PRINCE HENRY	What's this that says?
+
+PANDARUS	Well, I will not bear you and that I would have
+	a second song of that that I had a man and
+	that I am sick on him.
+
+POINS	I will see this house to be an end, and then I have
+	been a stranger on the sea to speak to thee with my
+	son and my life.
+
+FALSTAFF	The more she spends me, and the breathed to
+	his house and the state and honest man that hath a
+	caule of the street.
+
+FALSTAFF	Why, the
+
+Epoch: 27
+AVG loss: 1.476412142984795
+VAL loss: 1.333843469619751
+AVG acc: 0.5471734440687931
+=====================
+
+=====================
+
+
+Epoch: 28
+AVG loss: 1.4726233794472434
+VAL loss: 1.3393611907958984
+AVG acc: 0.5482171916239189
+=====================
+
+=====================
+
+TALBOT]
+
+LORD STANLEY	Then, as I am the world, I have an honest.
+
+BISHOP
+OF WINCHESTER	The will stays off, and show him fairly with thee:
+	If to be worse, I'll see thee all to see
+	The search of my best service. Is't not touch'd,
+	I will not have thee to the world to hear.
+
+	[Exeunt all but SILVIA, with the rest]
+
+CARDINAL CAMPEIUS	Have you not lost me to a mair of him?
+
+DESDEMONA	We are a sorry which I had rather hear.
+
+	[To SHYLOCK]
+
+	Where's my life?
+
+DESDEMONA	                  Why, this is my lord of men,
+	If you were but of me as to the storm.
+	What, are yourspach's at time?
+
+DUKE VINCENTIO	The gods will still be seen to be a secret.
+
+	[To SICINIUS, and PROSPERO]
+
+DUKE OF VENICE	Why, therefore will I think the cardinal's
+	The child and the count so married in the world.
+
+CASSIUS	I would not had the company to that
+	That I will help the world and so she hath.
+
+	[Exeunt]
+
+
+
+
+	THE TEMPEST
+
+
+ACT V
+
+
+
+SCENE I	The same. A part of the fate.
+
+
+	[Enter CORNWALL and PETER]
+
+CASSIUS	How now,
+
+Epoch: 29
+AVG loss: 1.4682013163422094
+VAL loss: 1.3452636003494263
+AVG acc: 0.5493711696971546
+=====================
+
+=====================
+
+
+Epoch: 31
+AVG loss: 1.4648562635074962
+VAL loss: 1.3430194854736328
+AVG acc: 0.5504115120569865
+=====================
+
+=====================
+
+THESSER THE TASTEW
+
+
+	CORSINGE a constable.
+
+	[Exeunt PROSPERO and PAGE]
+
+DUKE VINCENTIO	Why, what's your majesty?
+
+PERICLES	What should I see? I would you should not stay him
+	In that we will not send them. But you are
+	that true a story of the contemplation of them
+	to be a fair and most countenance.
+
+CORIOLANUS	There's not my sensible that have a soul to me.
+
+	[The Captain with a prace and the tribute of the
+	castle and twenty to the seat of the course, and
+	the trumpet sound to his honour]
+
+	[Enter CORIOLANUS]
+
+PERICLES	That should he did the stone? with all this dogs,
+	As well as they have borne, which with this beauty
+	Should seek to thee.
+
+	[Exeunt]
+
+
+
+
+	ANTONY AND CLEOPATRA
+
+
+ACT III
+
+
+
+SCENE II	A piril palace.
+
+
+	[Enter COMINIUS and SIMONIDES]
+
+DUKE VINCENTIO	I hope you have so fair to be a most.
+
+CASSIO	Thare's not a storm there any thing to see them.
+
+CASSIO	I am a soldier. But the strange wind have
+	I shallow that thou art a man's swell.
+
+COMINIUS	We would have seen thee, as
+
+Epoch: 32
+AVG loss: 1.4626217886895845
+VAL loss: 1.328839659690857
+AVG acc: 0.5507442756132646
+=====================
+
+=====================
+
+
+Epoch: 33
+AVG loss: 1.460195366975033
+VAL loss: 1.338214635848999
+AVG acc: 0.5516153001785278
+=====================
+
+=====================
+
+THAMIS OF WINCHESTER,)
+
+	English of the Duke of York, and Sir John Castins and
+	Albany the Leonato are at the wills and hath
+	stroned a man than his search: he is not a
+	subject that he says.
+
+FALSTAFF	The sun was a most proportion, a priest and the
+	prophetical courtesy of all my house and this woman
+	the senate, the wars are a man, a poorer and a
+	soldier's carriage and the state of all the creat
+	and soldiers that see them treacherously, the
+	servect of higher than a banishment, and the
+	countest of their brother is to that they wore
+	such. Were I not a man of this thing to be a
+	strangen soul, to set the chance of my sorrow, as
+	you shall have a poor soul, a man of that they
+	would be an execution of my soul, and to seal, it was
+	not a man thereof a poor subject to speak of the
+	contrary, I am a service, a soundengarce of the
+	precious subject of this truth. They are all thing
+	our change of thinking, that this is a soldier
+	of all manner. What shall I do? what a short shall
+	have t
+
+Epoch: 34
+AVG loss: 1.4578370929486824
+VAL loss: 1.3354456424713135
+AVG acc: 0.5521973063729027
+=====================
+
+=====================
+
+
+Epoch: 35
+AVG loss: 1.4555377155361753
+VAL loss: 1.3327311277389526
+AVG acc: 0.552693897449609
+=====================
+
+=====================
+
+THAMIS MOWBRAY:)
+
+DUKE OF AUMERLE	(LADY ANNE:)
+	Lady Mortimer, (Constable:)
+	(Second Servant:)
+	(Second Lord:)
+	(First Lord:)
+	(First Senator:)
+	(Second Leaper:)
+	(Second Soldier:)
+	(Third Lester:)
+	(First Lord:)
+	(Second Lady:)
+	(Second Servant:)
+	(First Soldier:)
+	(Third Servant:)
+	(Second Lester:)
+	(Second Senator:)
+	(Second Letter:)
+	(First Citizen:)
+	(Third Lord:)
+	(Second Servant:)
+	(Third Senator:)
+	(Servant:)
+	(Second Servant:)
+	(First Citizen:)
+	(Second Gentleman:)
+	(First Serving-Man:)
+	(First Citizen:)
+	(Second Servant:)
+	(Tirow:)
+	(Second Lady:)
+	(Fourth Soldier:)
+	(First Senator:)
+	(Second Lessenger:)
+	(First Gentleman:)
+
+
+SCENE	Another council-cave in a beater palace.
+
+
+	[Alarums and stand. Enter CARDINAL WOLSEY and Attendants]
+
+KING	We must not have a soldier's force of men.
+	There is the word of my thought that I will.
+	To the more spirit, I was so brave as mine,
+	That I was true and with my soul to spear
+	Which in the sun is so from me, to break it.
+
+KING LEAR	Where are
+
+Epoch: 36
+AVG loss: 1.4514761021642975
+VAL loss: 1.341185212135315
+AVG acc: 0.5538535579045614
+=====================
+
+=====================
+
+
+Epoch: 37
+AVG loss: 1.4516198402462583
+VAL loss: 1.3326029777526855
+AVG acc: 0.5539946561148672
+=====================
+
+=====================
+
+THURIO	a song, there was. There is a sorrow
+	To strengthen them to heaven. There is not these
+	That seek the prophet shame. We will deny
+	The whole or mercy, and his bond of hell,
+	That heaven we shell be welcome, that's the morn
+	And that, and some so from a precious pride,
+	The world so farest, when I would not have
+	With holy powers to this.
+
+MENENIUS	I hope, my lord,
+	That this is sure you see you.
+
+CASSIUS	Then we were stolen,
+	And set them all.
+
+	[Exeunt]
+
+
+
+
+	CORIOLANUS
+
+
+ACT II
+
+
+
+SCENE II	Troy. The Trick of Caesar's couse.
+
+
+	[Enter PROTEUS and CLEOPATRA]
+
+COMINIUS	There was the strength o' my sight,
+	And therefore shall we be a morning truth.
+
+TIMON	The patient, and thought she will needs be thought
+	To tell how he doth had the sea of hell,
+	Which we do love that he was sound an horr.
+	It is no matter, but the point, to spirit.
+	Why, that was she the short, and he was sent
+	A sort of her own presence: then he hath no honour,
+	Who we had mere sent for that honourable store
+	And
+
+Epoch: 38
+AVG loss: 1.4508060891700514
+VAL loss: 1.3221385478973389
+AVG acc: 0.5541026103857791
+=====================
+
+=====================
+
+
+Epoch: 39
+AVG loss: 1.4463759722854153
+VAL loss: 1.3265963792800903
+AVG acc: 0.5553925736745199
+=====================
+
+=====================
+
+THE TIMES
+
+
+ACT III
+
+
+
+SCENE III	The same. A raply-palace.
+
+
+	[Enter MACBETH and CARDINAL WOLSEY]
+
+CARDINAL WOLSEY	I thank you for your life.
+	What is the matter, sir?
+
+KING LEAR	Why dost thou have this true that had the sea
+	Of thy supposed service?
+
+Second Gentleman	I have been all too much.
+	We'll see your honour to your life. If you
+	Have beat and travels of your stand asise,
+	We will not bid this sea to him to hear him
+	An hour of your dear lord, and there will bear
+	The world that stays to have his father's daughter.
+
+	[Exeunt]
+
+
+
+
+	KING RICHARD II
+
+
+ACT V
+
+
+
+SCENE III	Before CARDINAL WOLSEY's palace.
+
+
+	[Enter KING RICHARD II and FALSTAFF]
+
+FALSTAFF	If, then, the son would have seen her honest man
+	to be solemnized with them and their stands in his
+	stature and the wildest prince and the world, with
+	the particular courtesy, this is the marriage of
+	a constable and this shallow as the wind of the
+	commons, which they have been this stane again to
+	their first beauty, were as an i
+
+Epoch: 41
+AVG loss: 1.4432700576204243
+VAL loss: 1.3276731967926025
+AVG acc: 0.556196928024292
+=====================
+
+=====================
+
+
+Epoch: 42
+AVG loss: 1.441402587890625
+VAL loss: 1.3183971643447876
+AVG acc: 0.5567563995448026
+=====================
+
+=====================
+
+THESSONES
+
+
+DUKE OF AUMERLE	(CLOTEN:)
+
+LEWIS	|
+	|
+SIR TOBY BELCH	|
+	|  the Duke of Cornwall.
+
+SIR ANDREW	afterwards Duke Petra. (PANDARUS:)
+
+	Officers, Soldiers, Soldiers, Messengers,
+	and Soldiers, and other Lords, and Strangers.
+	(First Senator:)
+	(First Guard:)
+	(First Senator:)
+	(Third Secretary:)
+	(Second Lord:)
+	(First Gentleman:)
+
+
+SCENE	Some Serving-Man.
+
+	[Enter COUNTESS and CLARENCE]
+
+KING LEAR	What shall we say, sir? what indifferent hour
+	Is all the wombn to the princely lord?
+
+CARDINAL CAMPEIUS	When this is this an answer, there is none,
+	That he hath sent to heaven at the casket shall.
+
+KING LEAR	What if he will? we heard the charge of the champet
+	That wears his stronger thousands.
+
+KING LEAR	I will not see thee all together:
+	I hope the wind hath brought her. Well, I will
+	Assure you with the chief and that you are
+	Too long, as you are well than what is now.
+
+	[Exit]
+
+CARDINAL WOLSEY	The sum is sent and broke him off, and see
+	That he hath seen his statu to the prince's
+
+Epoch: 43
+AVG loss: 1.440441118442651
+VAL loss: 1.3247203826904297
+AVG acc: 0.5571384076638656
+=====================
+
+=====================
+
+
+Epoch: 44
+AVG loss: 1.438766779610605
+VAL loss: 1.3240597248077393
+AVG acc: 0.5573935208176122
+=====================
+
+=====================
+
+THUMBER AND:)
+
+DUKE OF YORK	                  I am a maidenhead
+	To speak to you. I would not see your highness
+	And see him bear the sun and headly see
+	To speak with me and send to me to have me:
+	There's no match of them, which you are not that
+	In such a strong as hour.
+
+CLOTEN	What's the matter?
+	What should that be a patient thing, I pray,
+	What is this senator, there's not a man
+	A most of them? I'll bring you all the senses
+	On this affluction of your princely live,
+	When you are weak to talk and be recovered.
+
+	[Exeunt]
+	1 KING HENRY VI
+
+
+	DRAMATIS PERSONAE
+
+
+ADCARD	a staff of Wales.
+	(Ghost of CARDINAL:)
+
+LORD CARSINAL	(SALISBURY:)
+
+LORD CLARENCE	(DUCHESS:)
+
+EARL OF WORCESTER	(SUFFOLK:)
+
+LADY CAPULET	(CARDINAL:)
+
+DUKE OF YORK	(CARDINAL:)
+
+LORD RATCLIFF:
+
+BUSHY:
+
+LANCASTER	(CARDINAL:)
+
+EARL OF WORCESTER	(BUCKINGHAM:)
+
+DUKE OF YORK	(CANTERBURY:)
+
+LARG RICHARD PLANTAGENET	(SALISBURY:)
+
+LARC RASCY	(SUFFOLK:)
+
+EARL OF SALISBURY	(CATESBY:)
+
+DUKE OF YORK	(CORNWALL:)
+
+EARL OF WORCESTE
+
+Epoch: 45
+AVG loss: 1.436826853318648
+VAL loss: 1.3198357820510864
+AVG acc: 0.5578482545505871
+=====================
+
+=====================
+
+
+Epoch: 46
+AVG loss: 1.4346255188277273
+VAL loss: 1.3225226402282715
+AVG acc: 0.5585673843008099
+=====================
+
+=====================
+
+THUMLER OF WINDHESTER:
+
+LORD RISS	(BRAKENBURY:)
+
+LORD BARDOLPH	all the council of Lancaster, with the courtesy
+	of Lancaster, and a thousand thanes to him as the messenger.
+
+PRINCESS	Why, here's a mean as truth, that she is now,
+	Within the willing streams of heaven's dear laws,
+	And the exceeding strength is still a pair.
+	The service of her son, whose sorrow should
+	Be this the court of this.
+
+PRINCESS	I will do't, sir, well.
+
+	[Exit]
+
+PROTEUS	I am not so. What will you see the care?
+
+PRINCESS	The sense will bring your grace to the prince's sor.
+
+	[Exit]
+
+
+
+
+	TWELFTH NIGHT
+
+
+ACT IV
+
+
+
+SCENE III	A street.
+
+
+	[Enter CAPULET, LUCIUS, and others]
+
+BASSANIO	Well, I have been a pretty soul to-night.
+
+PETRUCHIO	Where is my lord?
+
+DUKE VINCENTIO	If I did see her, I would have my hand
+	To steal to me.
+
+BELARIUS	                  I will be sure you speak.
+
+PROTEUS	We have as strange as you have beaten ham,
+	And so to the poor man of their princely father.
+
+LUCENTIO	It is an honour of the sun th
+
+Epoch: 47
+AVG loss: 1.4340997545646899
+VAL loss: 1.321495532989502
+AVG acc: 0.5586834815776709
+=====================
+
+=====================
+
+
+Epoch: 48
+AVG loss: 1.4336247711470633
+VAL loss: 1.3187265396118164
+AVG acc: 0.5590213619578969
+=====================
+
+=====================
+
+THURIS LORG OF WINCEETTER IF WILLINE
+
+
+ADTING
+
+
+ANTION
+
+
+DUKE OF PETER	(BRUTUS:)	|
+			|
+PISTOL	|
+	|  sententies to Proteus. (Soldier:)
+
+DUKE OF AUFFOLE	(SUFFOLK:)	|
+			|
+CORNWALL	|
+	|  servants to the Duke.
+(SURRY	|
+	|  servants to King Henry PISTOR.
+
+DUKE OF BUCKINGHAM	(SALISBURY:)
+
+LORD STANLEY	(SUFFOLK:)	|
+		|  arms to the Duke of Blook.
+	|
+SIR HUMPHREY	a servant to Princess. (KING EDWARD IV:)
+
+LORD BURGONDY	(SOMERSET:)
+
+DUKE OF BUCKINGHAM	(SALISBURY:)
+
+SIR WALTER BLUNT	(SUMFOLK:)
+
+DUKE OF BUCKINGHAM	(SALISBURY:)
+
+LORD WILLOUGHBY:
+
+DUKE OF YORK	(SOMERSET:)
+
+SURREY:
+
+SIR
+WALTER BLUNT
+
+
+SORERSET (LERNOX,))
+
+DUKE OF YORK	(DUKE OF YORK:)	|
+
+
+BUCKINGHAM	(SURREY:)
+
+DUKE OF YORK	(SIR WILLER BLUNT:)
+
+DUKE OF YORK	(SIR HAMPHREY:)
+
+DUKE OF YORK	(DUKE;)
+
+SIR HIMPER	(SIR HUGH EVANS:)
+
+LORD WILLOUGHBY	(SALISBURY:)
+
+DUKE OF BARDORPH	(HORTENSIR:)
+
+LORD STAFFORD	(SOMERSET:)
+
+DUKE OF SORK	(SUFFOLK:)
+
+DUKE OF SURREY	(BISHOP OF WINCHESTER:)
+
+SIR
+JOHN TALBOT	(FALSTAFF:)
+
+SALISBURY:
+
+SALISBURY:
+
+LORD WIL
+
+Epoch: 49
+AVG loss: 1.430124537005569
+VAL loss: 1.3226910829544067
+AVG acc: 0.559599201968222
+=====================
+
+=====================
+
+
+Epoch: 51
+AVG loss: 1.4269291335886174
+VAL loss: 1.3274800777435303
+AVG acc: 0.560694088863604
+=====================
+
+=====================
+
+THALIS	The Dauphin, and his father and his head
+	And so delights him with his service straight,
+	To take her father and, there's no such mortal
+	As he is subject. I have had a soldier,
+	In the content and that, in her another,
+	I saw her hither was the world of them,
+	Which in a strong and shame we have to see me
+	As well as I am great and too an earth,
+	To seek the strength of all that thou didst bring.
+
+	[They fight]
+
+SIR WALTER BLUNT	I will not stay to heaven, I would not say.
+
+KING JOHN	I will not love a thiusand man in him.
+
+	[Exeunt]
+
+
+
+
+	THE MERCY WIVES OF WINDSOR
+
+
+ACT IV
+
+
+
+SCENE VII	Before PRINCE's palace.
+
+
+	[Enter SIR TOBY BELCH and CASSIO]
+
+SIR TOBY BELCH	Come, come your ways.
+
+	[They fill a pollic]
+
+SIR TOBY BELCH	What, have you to do, that will not stand as you are?
+
+SIR TOBY BELCH	Why, the moon should be assured to be, and I have
+	the sea that I am sure that I will not strive to be sad
+	as they are as much as the shadow.
+
+SIR TOBY BELCH	Why then, sir, I'll tell you what,
+
+Epoch: 52
+AVG loss: 1.4280317477023963
+VAL loss: 1.3190491199493408
+AVG acc: 0.5602342406908671
+=====================
+
+=====================
+
+
+Epoch: 53
+AVG loss: 1.4262094655181423
+VAL loss: 1.3169904947280884
+AVG acc: 0.5611546951351744
+=====================
+
+=====================
+
+THUMIO Of LONGAVILLE	        With all thy souls
+	And shallow mercy of my best own storm.
+
+	[Exit, an Attendant]
+
+	Where is my story this to be a fool,
+	To be true thing to tell him, that I hear?--
+	And when the best of this, the brother shore
+	Thit strength is buried to the warlike life,
+	And there is not a princely market-place,
+	That, were he best, and he will have him home
+	Where his desires are buried.
+
+CONSTANCE	I hope to see him. Well, I'll set his son,
+	And he to bear his soul to her behalf.
+
+	[Exeunt]
+
+
+
+
+	MACBETH
+
+
+ACT III
+
+
+
+SCENE II	The same.
+
+
+	[Enter CAPULET and Attendants]
+
+PORTIA	I am already and to-night will see thee there.
+
+	[Exeunt]
+
+
+
+
+	TROILUS AND CRESSIDA
+
+
+ACT I
+
+
+
+SCENE III	Before CLAUDIO's house.
+
+
+	[Enter PENDARUS and ARIEL]
+
+CLAUDIO	Thou shouldst not be a father to make thee bear
+	thy face and thou hast a fool of the child that he
+	is a man, and therefore thou'lt be a foolish monster:
+	thou'lt be so much as thou wilt.
+
+DON PEDRO	I am not a month.
+
+DOGBERRY	Ay,
+
+Epoch: 54
+AVG loss: 1.4244654760938702
+VAL loss: 1.3167229890823364
+AVG acc: 0.5615151129346906
+=====================
+
+=====================
+
+
+Epoch: 55
+AVG loss: 1.4217659456079657
+VAL loss: 1.316011667251587
+AVG acc: 0.5620554528814373
+=====================
+
+=====================
+
+THAMIS ORLAANS:
+
+
+LORD SAR	(ARCHBISHOP OF YORK:)
+
+DUKE OF AUVERGNE	(SIR WILTER BLUNT:)
+
+LARY ANNE	an onourable castle.
+
+DONTJOY	|
+	|  servants on the King.
+		|  soldiers. (Lord:)
+
+	A Senator. (Son.
+	(First Servant:)
+	(First Soldier:)
+	(Second Soldier:)
+	(First Servant:)
+	(First Gentleman:)
+	(First Gentleman:)
+	(First Servant:)
+	(First Servant:)
+	(Second Gentlewan:)
+	(Second Servant:)
+	(First Stranger:)
+	(Second Lord:)
+	(Second Gentlewan:)
+	(Second Lord:)
+	(Second Lord:)
+	(Second Gentleman:)
+	(Third Senator:)
+	(Second Servant:)
+	(First Guard:)
+	(Second Servant:)
+	(First Gentleman:)
+
+	A Page, an ague.
+	(Second Servant:)
+	(First Gentleman:)
+	(First Lord:)
+	(First Soldier:)
+	(First Servant:)
+	(Second Gentleman:)
+	(Third Servant:)
+	(Second Senator:)
+	(First Gentleman:)
+	(Second Gentleman:)
+	(Second Lord:)
+
+
+SCENE	Angelor of Caesar's hand.
+
+
+
+	CORIOLANUS
+
+
+ACT IV
+
+
+
+SCENE I	The same.
+
+
+	[Enter CLEOPATRA, PANDARUS, and others, and others]
+
+CLOTEN	I warrant you, good Madam.
+	I have a most true 
+
+Epoch: 56
+AVG loss: 1.4196112363988702
+VAL loss: 1.3207803964614868
+AVG acc: 0.5626467394828797
+=====================
+
+=====================
+
+
+Epoch: 57
+AVG loss: 1.4202048800208351
+VAL loss: 1.3197187185287476
+AVG acc: 0.5625207935680042
+=====================
+
+=====================
+
+THOMAS MOWBRAY]
+
+LADY MACBETH	When the world stands too, and that see them so.
+	If thou do seek thy bones to speak again,
+	And take me from thy brother, and thou hast been
+	To take a thousand thousands.
+
+	[Ereunt]
+
+
+
+
+	ALL'S WELL THAT ENDS WELL
+
+
+ACT IV
+
+
+
+SCENE II	A room in the palace.
+
+
+	[Enter MACBETH]
+
+	[Exeunt all but BUCKINGHAM]
+
+CARDINAL, WORCESTER	To bear me that I will be much as soon
+	As your own sorrows will not be most dangerous,
+	To that I will be so, to be a man
+	That you are such as yet as you should see him.
+
+KING JOHN	The king is strange, the king is never so.
+
+CLIFFORD	The common prince of London is as little,
+	And we have stol'n her to his portent streets,
+	And so the world he had not strangered
+	That thou hast broken thee to this fair side.
+
+BURGUNDY	A men, a soldier, and thy loving lord,
+	And we have been a soul to seem a soldier,
+	To see the seas of majesty to the wind.
+
+KING RICHARD II	Tell me, thou hast not stay'd thee to my head.
+
+KING EDWARD IV	Why, then, I say
+
+Epoch: 58
+AVG loss: 1.4209674471074885
+VAL loss: 1.3115822076797485
+AVG acc: 0.562401853908192
+=====================
+
+=====================
+
+
+Epoch: 59
+AVG loss: 1.417487882411841
+VAL loss: 1.3196748495101929
+AVG acc: 0.5631704161383889
+=====================
+
+=====================
+
+THURIO	an army to his fool, as they should say
+	To take away my love, to say the matter.
+
+	[Exit]
+
+
+
+
+	THE TWO GENTLEMEN OF VERONA
+
+
+ACT V
+
+
+
+SCENE VV	A palace.
+
+
+	[Enter PENICLUS, COMINIUS, and others]
+
+ACTIRIUS	With me a little without this the sun.
+	The gods are this and some of this accupt
+	The present countenance of the world that show'd
+	The sun that seems an end in hard assembling,
+	Whereof he wanteth her to see his son
+	That she hath the braid that was true as then
+	Which will be therefore to beside and stay
+	Tiers to an astard sea.
+
+CLEOPATRA	I am sorry to be hanged, and so, I will.
+
+COMINIUS	When I was sorry therefore well as well said,
+	I should be true and have no more than I have speak
+	To spit it and this proud seas too: there's nothing
+	But should have their affections to me friends:
+	If I had seen, they shall not, but it is as much
+	As may be merry, they shall say it is.
+
+	[Exit COSIOLANUS]
+
+	Would I have been a poor and careful sight,
+	Were to burn on to seem together t
+
+Epoch: 61
+AVG loss: 1.4156109782421227
+VAL loss: 1.318630576133728
+AVG acc: 0.5639117019826716
+=====================
+
+=====================
+
+
+Epoch: 62
+AVG loss: 1.4140762428803877
+VAL loss: 1.3136014938354492
+AVG acc: 0.5643029920260112
+=====================
+
+=====================
+
+THUMIS AESTRIDA
+
+
+ART III
+
+
+	[The Bastard and the chamberlain. Enter CASSIO]
+
+CLOTEN	Well, where is me not to set a storm again?
+
+PISANIO	The gods are thine, and the dear fresh stones of them.
+
+	[Exeunt]
+
+
+
+
+	ALL'S WELL THAT ENDS WELL
+
+
+ACT II
+
+
+
+SCENE VI	A palace.
+
+
+	[Enter COMINIUS, and Servants]
+
+Second Lord	I have said you have nothing.
+
+SEMPRONIUS	To see this. Will you hold me on the court?
+
+CORIOLANUS	Well, I am none.
+
+Second Lord	I will not be a maid.
+
+Second Lord	Will't please your highness so much to see you? What is
+	your will? when I saw you too, I have a son and
+	commenited.
+
+First Lord	Troth, I would you will be my son, and I would have
+	told my senate with them.
+
+First Lord	What's the matter?
+
+Second Soldier	Well, sir; you should have a particular that I would
+	have as lost a soldier, and this most affairs,
+	and the morning of you that have been such a
+	poor solemnity.
+
+First Lord	The most pride or the world to be the sea that he was
+	a soldier.
+
+First Soldier	I have a son
+
+Epoch: 63
+AVG loss: 1.4137264800794196
+VAL loss: 1.3147075176239014
+AVG acc: 0.5644594311714173
+=====================
+
+=====================
+
+
+Epoch: 64
+AVG loss: 1.4130805074807369
+VAL loss: 1.3197818994522095
+AVG acc: 0.5646713622411093
+=====================
+
+=====================
+
+THURIO	Where is he?
+
+PARIS	                  A prinket sing or son,
+	Which is no mere a shame. By this sigh then
+	Whereof I should, being all of that they have,
+	And she is stayed with thee.
+
+	[Exeunt all but CAPILET, and CLEON]
+
+		 How now, sirrah! will!
+	Thou art a soul to see my soul again,
+	And thou shalt have me worth that I have been,
+	When I am sorry then.
+
+	[Re-enter PORTIA]
+
+		             What are you there?
+	They say they say this will be to the presence
+	Which way to seek another with the strange.
+
+	[Enter a Servant]
+
+	Herce and my lord, I say the will is still.
+
+	[Exit POMPEY]
+
+	[Reterger to the parley]
+
+	What's your master?
+
+PRINCESS	                  If you should speak to him,
+	You have seen to see how he was service in that.
+
+DUKE VINCENTIO	I hear he was not worth a mort than haste.
+
+COUNTESS	The sin things the poor state of any
+	trumpet, and he was thane of. Why should he be
+	this shallow a son of his hand? I will bring you to
+	the prisoner.
+
+	[Enter ANTONIO]
+
+DUKE VIN
+
+Epoch: 65
+AVG loss: 1.4101606054017037
+VAL loss: 1.313707709312439
+AVG acc: 0.5653056429371689
+=====================
+
+=====================
+
+
+Epoch: 66
+AVG loss: 1.4102092416358716
+VAL loss: 1.3192415237426758
+AVG acc: 0.5654001504724676
+=====================
+
+=====================
+
+THOMAS LOWOR	An one of your condemning.
+
+POMPEY	I have not seen him as they would say, to say
+	the most woman of the parliament of his hand, and the
+	state of them are to see her to her that hath not
+	so fair and borne to bear him.
+
+PAROLLES	Ay, but I am a most soldier of his fair and more
+	confusion and such a man as a strange as he hath been
+	to take his soul to her.
+
+CLOTEN	What's the matter? we have an eye of honour in
+	the cap of them, that they have been strong one
+	of that store and their father will be a man's book
+	to the wild state of the chariot of the crown. There
+	is no more to my love and bear him than any thing.
+
+Clown	Ay, that I heard it is as touched as the strength of
+	their fortunes. It is an old man of his head and a
+	man to this sight, though he be sure true as I have
+	an enemy, there is not an answer in the captain that
+	they shall have his stand and threaten him to my
+	chaim, who should bury his soul is a man of any
+	tribune.
+
+PAROLLES	Therefore will not, sir; and
+
+Epoch: 67
+AVG loss: 1.4091889615492388
+VAL loss: 1.3145220279693604
+AVG acc: 0.5654425749634251
+=====================
+
+=====================
+
+
+Epoch: 68
+AVG loss: 1.4094394355831725
+VAL loss: 1.3180731534957886
+AVG acc: 0.5656010976704684
+=====================
+
+=====================
+
+THUMOST	The wall, the sea are sent to strike a strange.
+	The sun will send the world; which is a man,
+	And, in the world, that straight have taken him
+	As he is dead, and thence the forest spies.
+	This is the matter that I would not stay,
+	But we have seen two such another state
+	Whereof he shall not break their hands and through,
+	And so the world and my another speak.
+
+	[Exeunt]
+
+
+
+
+	AS YOU LIKE IT
+
+
+ACT II
+
+
+
+SCENE II	The same. A street.
+
+
+	[Alarum. Enter CASSIO and PORTIA]
+
+PERICLES	Those whom a soldier is not wish'd and strong
+	To be a store to thee wherein they say.
+
+BRUTUS	Welcome, gentleweman.
+
+	[Exeunt]
+
+
+
+
+	AS YOU LIKE IT
+
+
+ACT V
+
+
+
+SCENE IV	A room in the farest.
+
+
+	[Enter PORTIA and SIRVIA, at an enemy]
+
+PAROLLES	There's a man a marrieg of the world.
+
+SIR ANDREW	What, a son too?
+
+MALVOLIO	I would not have said, sir, and the women should be
+	a soul of this case of this son of them. This
+	is a good senseless part of his hand, so do you as I
+	will say,
+	That he hath an answer to
+
+Epoch: 69
+AVG loss: 1.4060986238537412
+VAL loss: 1.3207648992538452
+AVG acc: 0.5664586727546923
+=====================
+
+=====================
+
+
+Epoch: 71
+AVG loss: 1.4049648377389619
+VAL loss: 1.3164787292480469
+AVG acc: 0.5668611361041214
+=====================
+
+=====================
+
+THUMES LOUGLAS
+	DOCHOR AND PRINCE:
+
+
+LEONATO	a captain.
+
+CONNA	a capitol to Come.
+
+POSTHUMUS LEONATUS	a cousin to Claudio.
+
+CALPURNIA	sir of the prince.
+
+
+LEONTES	a cousin to Brutus.
+
+ANTONIO	attending on the Duke of Beatrice.
+
+CLAUDIO	a continuante it to tree the Common prisoner.
+
+CELIA	the Lord Cominius. (CASSIUS:)	|
+		|  the Posthumus.
+
+AGRIPPA	|
+	|  friends of the Capitol.
+
+CAESAR	|
+	|
+COMINIUS	|  a third Commonion. (CLEOPATRA:)
+
+ANTONY	attendant on the Countess of Caesar.
+
+ANTONY	|
+	|
+POSTHUMUS LEONATUS	|
+
+
+MARK ANTONY	|
+		|
+MENENIUS	|  son to Caesar.
+
+ARTONY	|
+	|
+CORNELIUS	|
+
+
+CLEOPATRA	son to Cassius.
+
+ANTONY	a prince an Athenic.
+
+AGRIPPA	|
+	|  servants to Cassius at Corioli.
+
+CLEOPATRA	|
+		|
+CLEOPATRA	|
+	| Captains to Alexas.
+
+		Two other Servants and Attendants.
+	(First Lord:)
+	(First Gentleman:)
+
+
+SCENE	Andonio. (Commoner.
+
+
+	[Enter PROTEUS]
+
+CASSIO	What should I see you and my love to-day?
+
+OTHELLO	I will descend it: I am sorry then.
+
+CRESSIDA	Why, what's the matter?
+
+OTHELLO
+
+Epoch: 72
+AVG loss: 1.4042007892782038
+VAL loss: 1.3167082071304321
+AVG acc: 0.5669037499572291
+=====================
+
+=====================
+
+
+Epoch: 73
+AVG loss: 1.4035298519423514
+VAL loss: 1.3191007375717163
+AVG acc: 0.5673842409885291
+=====================
+
+=====================
+
+THOMAS OF WINCHESTER and CORTENSIO, with
+	the Duke of Strength]
+
+PETRUCHIO	Why, what a fault thou wilt!
+
+ROMEO	And why, the senators, as I am
+	The wan of thee to be a soldier's book.
+
+BIRON	That's a subject of this storm of men,
+	And then the way to strike a lover's bear.
+
+BIRON	Well, I, sir, I will stand, and so is yours.
+
+BIRON	With all these ways to be my standing strong,
+	The book, the court, which thou art buried,
+	As I am sorry that I would not speak, I had as well discharge my lady's side.
+	Then therefore I will stay and seal them with.
+
+PETRUCHIO	And to the state, I will, thou shalt be said
+	To send a true and tooth to-day thou hast.
+
+PORTIA	Ay, but the world shall not do servant for
+	As if they see to be my son or stand,
+	They see to take a truth of their desire.
+	Think not to me, they went a wife to marry:
+	And, if thou darest as willingly be mine,
+	I had as many more than thou art won,
+	In thy dark state as I, the substince that,
+	When I have left a state a state to mine,
+	An
+
+Epoch: 74
+AVG loss: 1.4032325370383985
+VAL loss: 1.3199373483657837
+AVG acc: 0.5673783707618714
+=====================
+
+=====================
+
+
+Epoch: 75
+AVG loss: 1.4019130316647617
+VAL loss: 1.3203619718551636
+AVG acc: 0.5677821585626314
+=====================
+
+=====================
+
+TIMEN'S son on them.
+	I have seen a stream to the wing to sear,
+	And see the sea with such and think of them.
+	This is a morning the master as to say,
+	To be a proud man and his serpent speaks.
+	There sears and sear the shows, and the brink states
+	To star and therein to the complexest
+	A shame, and that which stands in strength and story,
+	Till this the party of the wards of hell
+	Beat to the world.
+
+	[Enter a Short]
+
+		       How! the man! hear me!
+
+IACHIMO	I had rather have a prophecies than I do,
+	To be a serpent to the prince of Cambio:
+	I hope that you are merrily, be not a gravity,
+	And to bring to the court.
+
+COUNTESS	Well, sir, you had
+	A meaning to the senate.
+
+LEONINE	Why, this is most sweet.
+
+IMOGEN	Well, I am no man so the sun of me
+	Is to consider of that world or stars,
+	Who hath been sealous to my stomach: take
+	My father to her fair assistance.
+
+IACHIMO	If you were strange, my lord, there's nothing but me,
+	To be myself, but I'll not start and love me.
+
+CLOTEN	To be a p
