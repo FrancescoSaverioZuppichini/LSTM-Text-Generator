@@ -1,5 +1,5 @@
 # LSTM Text Generator
-## Francesco Saverio Zuppichini
+### Francesco Saverio Zuppichini
 
 ## Quick start
 
