@@ -25,7 +25,7 @@ We also provided a cli to quickly use the model, type \texttt{python3 main.py --
 \subsection{Generate text}
 The following snippet shows how to generate $500$ chars using 'TEST' as starting input from the $shakespeare$ model:
 \begin{lstlisting}[breaklines=true]
-python3 main.py --generate=True --from_model='shakespeare' --n_text=500 --start_text="TEST"	
+python3 main.py --generate=True --from_model='./checkpoints/shakespeare' --n_text=500 --start_text="TEST"	
 \end{lstlisting}
 \subsection{Train model}
 If you wish to train it:
@@ -69,7 +69,7 @@ CARDINAL WOLSEY	This is a soul,
 	Which they are sorry in the sea that was
 	As though in such a painter: that they are not
 \end{lstlisting}\\
-We generated $20$ files with $1000$ chars each, they can be found in \emph{./results/shakespeare}. We also generated a huge file of $50000$ chars, you can find it in \emph{./results/shakespeare/PROUD TO BE.txt}. It is a almost full play, take a look at it, it's very funny.
+We generated $20$ files with $1000$ chars each, they can be found in \emph{./results/shakespeare/results.txt}. We also generated a huge file of $50000$ chars, you can find it in \emph{./results/shakespeare/PROUD TO BE.txt}. It is a almost full play, take a look at it, it's very funny.
 
 Unfortunately we were not able to use tensorboard on the cluster so we can not provide any useful plots, but \emph{./results/output-shakespeare.txt} shows the train loss and validation loss at each epoch.
 \subsection{Bible}
