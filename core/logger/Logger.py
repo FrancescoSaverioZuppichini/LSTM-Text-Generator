@@ -1,8 +1,5 @@
 import time
 import sys
-from threading import Thread
-from concurrent.futures import ThreadPoolExecutor
-
 
 class Logger:
     """

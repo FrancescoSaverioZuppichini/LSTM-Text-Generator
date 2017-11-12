@@ -1,10 +1,12 @@
-from model import model
-from reader import Reader
-import tensorflow as tf
 import time
-import os
+
+import tensorflow as tf
+from model import model
+
 # from parser import args
 from logger import Logger
+from reader import Reader
+
 
 # import matplotlib.pyplot as plt
 def train_model(args):
@@ -54,7 +56,7 @@ def train_model(args):
     sess.run(tf.global_variables_initializer())
 
 
-    for x_batch, y_batch, epoch in r.create_iter(args.epochs):
+    for x_batch, y_batch, epoch in r.create_iter(epochs):
 
         feed_dict = {'X:0': x_batch, 'Y:0': y_batch, 'pkeep:0': args.dropout}
 

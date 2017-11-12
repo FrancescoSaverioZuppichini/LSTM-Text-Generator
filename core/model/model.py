@@ -1,8 +1,9 @@
-import tensorflow as tf
 import numpy as np
-
+import tensorflow as tf
 from tensorflow.contrib import rnn
+
 from utils import Utils
+
 
 class RNN:
 
@@ -25,6 +26,7 @@ class RNN:
         return self.initial_state, self.last_state
 
     def create_variables(self):
+
         self.x = tf.placeholder(tf.int64, [None, None], name='X')
         self.y = tf.placeholder(tf.int64, [None, None], name='Y')
         # each input/target must be a 1-hot vector
