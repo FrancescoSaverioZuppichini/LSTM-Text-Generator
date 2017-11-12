@@ -1,8 +1,8 @@
 import tensorflow as tf
-from tensorflow.contrib import rnn
-# from tensorflow.contrib import layers as l
-from utils import Utils
 import numpy as np
+
+from tensorflow.contrib import rnn
+from utils import Utils
 
 class RNN:
 
