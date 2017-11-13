@@ -10,6 +10,9 @@ To use a trained model:
 ```
 python3 main.py --generate=True --from_model='shakespeare' --n_text=1000 --start_text="SIR "
 ```
+Or visit our **web app** at :
+https://your-shakespeare.herokuapp.com/
+
 To train from scratch
 
 ```
