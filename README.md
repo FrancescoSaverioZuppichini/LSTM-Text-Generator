@@ -3,7 +3,7 @@
 
 ## Quick start
 
-Be use you have Tensorflow installed.
+Be use you have Tensorflow installed. Download the checkpoints here [TODO!!]
 
 To use a trained model:
 
