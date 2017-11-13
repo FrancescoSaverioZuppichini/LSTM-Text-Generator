@@ -10,7 +10,7 @@ frame=single
 \begin{document}
 \maketitle
 \section{Preambula}
-Below there are a list of all the material I used in order to develop this project. 
+Below there is a list of all the material I used in order to develop this project. 
 \begin{itemize}
 	\item Tutorial provided in the Deep Learning class slides
 	\item \href{https://www.youtube.com/watch?v=vq2nnJ4g6N0}{Marting Görner talk and code}.
@@ -18,10 +18,10 @@ Below there are a list of all the material I used in order to develop this proje
 	\item Tensorflow source code, since the docs is incomplete sometimes.
 	\item Some blog posts on medium, but lots of them where just wrong. 
  \end{itemize}
+\section{Web App}
+I created a web app that accept a input from the user and response with the generated text from my model. You can find it \href{https://your-shakespeare.herokuapp.com/}{here}.
 \section{Implementation}
-All the code is open source and hosted on my GitHub \href{https://github.com/FrancescoSaverioZuppichini/LSTM-Text-Generator}{here}. You can check my commits to see when I started to work on it and how I managed to implement it.
-
-We also provided a cli to quickly use the model, type \texttt{python3 main.py --help} in order to see the available options.
+All the code is open source and hosted on my GitHub \href{https://github.com/FrancescoSaverioZuppichini/LSTM-Text-Generator}{here}. You can check my commits to see when I started to work on it and how I managed to implement it. All the model's file are in \emph{core/model} module.  We also provided a cli to quickly use the model, type \texttt{python3 main.py --help} in order to see the available options.
 \subsection{Generate text}
 The following snippet shows how to generate $500$ chars using 'TEST' as starting input from the $shakespeare$ model:
 \begin{lstlisting}[breaklines=true]
