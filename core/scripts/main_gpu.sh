@@ -6,4 +6,4 @@
 #SBATCH --error=a.%j.err
 module load python/3.5.0
 module load cudnn/8.0
-srun python3 train.py 
+srun python3 main.py

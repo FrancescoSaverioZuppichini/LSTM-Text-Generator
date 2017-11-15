@@ -90,6 +90,7 @@ class RNN:
     def get_pred(self, output):
 
         pred = tf.argmax(output, 1)
+
         pred = tf.reshape(pred, [tf.shape(self.x)[0], - 1])
 
         return pred

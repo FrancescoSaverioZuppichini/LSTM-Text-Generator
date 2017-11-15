@@ -12,6 +12,9 @@
               <h6>Type something below and generate some shakespeare!</h6>
             </div>
           </v-container>
+           <v-alert color="error" icon="warning" value="true" v-if="error.hasError" dismissible v-model="error.hasError">
+                {{error.msg}}
+          </v-alert>
           <v-layout row wrap>
             <v-flex xs12>
               <v-container>
@@ -39,7 +42,7 @@
                 <h6 class='text-xs-center center-absolute'> Nothing here! Generate something </h6>
               </div>
               <v-container>
-              <pre>{{generated}}</pre>
+                <pre>{{generated}}</pre>
               </v-container>
             </v-flex>
           </v-layout>
@@ -47,9 +50,9 @@
       </v-content>
     </main>
     <v-footer class="pa-3">
-    <v-spacer></v-spacer>
-    <div>© Francesco Saverio Zuppichini {{ new Date().getFullYear() }}</div>
-  </v-footer>
+      <v-spacer></v-spacer>
+      <div>© Francesco Saverio Zuppichini {{ new Date().getFullYear() }}</div>
+    </v-footer>
   </v-app>
 </template>
 
@@ -71,14 +74,19 @@
         textRules: [
           (v) => !!v || 'Type something!',
         ],
+        alert: false,
+        error: {
+          hasError: false,
+          msg: 'The universe exploded. Try again in a few seconds.'
+        }
       }
     },
     methods: {
       generateText() {
-        if(this.inputVal.length < 1) return
-
+        if (this.inputVal.length < 1) return
+  
         this.loading = true
-
+        
         axios.get(`api/generate/${this.inputVal}/${this.nText}`)
           .then(({
             data
@@ -88,6 +96,7 @@
           })
           .catch((err) => {
             console.log(err)
+            this.hasError = true
             this.loading = false
           })
       }

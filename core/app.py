@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import jsonify
 import os
+
 app = Flask(__name__)
 
 from model.generate import generate_from
@@ -18,6 +19,6 @@ def generate_text(text, n_text):
 
 if __name__ == "__main__":
     app.run()
-#
+
 # if __name__ == '__main__':
 #     app.run(port=3030, debug=True)
