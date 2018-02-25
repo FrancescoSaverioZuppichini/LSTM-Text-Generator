@@ -9,7 +9,6 @@ def sample_prob_picker_from_best(distribution, n=2):
     p = np.squeeze(distribution)
     p[np.argsort(p)[:-n]] = 0
     p = p / np.sum(p)
-
     return np.array([np.random.choice(distribution.shape[-1], 1, p=p)[0]])
 
 

@@ -11,8 +11,9 @@ class Logger:
         self.should_store = should_store
         self.should_print = should_print
 
-        with open(self.file_name,'w') as f:
-            f.write('')
+        if(self.should_store):
+            with open(self.file_name,'w') as f:
+                f.write('')
 
     def get_model_definition(self, args, r, n_batches):
 
@@ -36,9 +37,9 @@ class Logger:
 
     def get_current_train_info(self, epoch, avg_loss, avg_acc, val_loss, pred_text="", text=""):
 
-        return "\nEpoch: {}\nAVG loss: {}\n" \
-               "VAL loss: {}\n" \
-               "AVG acc: {}\n" \
+        return "\nEpoch: {}\nAVG loss: {:.4f}\n" \
+               "VAL loss: {:.4f}\n" \
+               "AVG acc: {:.2f}\n" \
                "=====================\n{}\n" \
                "=====================\n{}\n".format(epoch,avg_loss,val_loss,avg_acc,pred_text,text)
 

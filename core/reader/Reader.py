@@ -92,7 +92,7 @@ class Reader():
         return ord(word)
 
     def get_unique_words(self):
-        return len(self.data_set.keys())
+        return 255 # using ASCII
 
     def print_info(self):
         print('Data size: {}'.format(len(self.data)))

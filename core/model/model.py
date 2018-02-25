@@ -51,7 +51,6 @@ class RNN:
 
         output, self.last_state = tf.nn.dynamic_rnn(rnn_layers, self.x, initial_state=self.initial_state ,dtype=tf.float32)
 
-
         return output
 
     def run_linear(self, rnn_output):
@@ -83,7 +82,7 @@ class RNN:
 
         y_flat = tf.reshape(self.y, [-1, shape[-1]])
 
-        loss = tf.nn.softmax_cross_entropy_with_logits(logits=logits, labels=y_flat)
+        loss = tf.nn.softmax_cross_entropy_with_logits_v2(logits=logits, labels=y_flat)
 
         return loss
 

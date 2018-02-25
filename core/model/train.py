@@ -2,6 +2,7 @@ import time
 
 import tensorflow as tf
 from model import model
+from tqdm import tqdm
 
 # from parser import args
 from logger import Logger
@@ -27,7 +28,7 @@ def train_model(args):
     n_classes = 255
     n_batches = len(r.data)//(batch_size * sequence_len)
     # create a logger to print/save informations
-    logger = Logger.Logger(True, True)
+    logger = Logger.Logger(False, True)
 
     # n_classes_var = tf.Variable(n_classes, dtype=tf.int64, name="n_classes")
 
@@ -51,12 +52,13 @@ def train_model(args):
 
     logger.log(logger.get_model_definition(args,r,n_batches))
 
-    saver = tf.train.Saver(max_to_keep=20)
+    saver = tf.train.Saver(max_to_keep=5)
 
     sess.run(tf.global_variables_initializer())
 
+    pbar = tqdm(r.create_iter(epochs))
 
-    for x_batch, y_batch, epoch in r.create_iter(epochs):
+    for x_batch, y_batch, epoch in pbar:
 
         feed_dict = {'X:0': x_batch, 'Y:0': y_batch, 'pkeep:0': args.dropout}
 
@@ -71,6 +73,8 @@ def train_model(args):
         total_loss += loss
         total_acc += acc
 
+        pbar.set_description("EPOCH={}, LOSS={:.4f}, BATCH={}".format(epoch, total_loss / n, n))
+
         if(n % n_batches == 0 and n > 0):
 
             avg_loss = total_loss/n_batches
@@ -81,17 +85,19 @@ def train_model(args):
 
             logger.log(logger.get_current_train_info(epoch, avg_loss, avg_acc, val_loss))
 
-            if (n / 2 % n_batches == 0):
-                text = my_model.generate('T', sess, 1000)
-                logger.log("{}\n".format(text))
+            text = my_model.generate('The ', sess, interactive=False, n_text=500)
+            logger.log("---Example text:---")
+            logger.log("{}\n".format(text))
 
             total_loss = 0
             total_acc = 0
+            n = 0
 
 
             if(CHECK_POINT):
                 save_path = saver.save(sess, "checkpoints-{}/model.ckpt".format(START), global_step=epoch)
-                print("Model saved in file: %s" % save_path)
+                print("\nModel saved in file: %s" % save_path)
+    pbar.close()
 
 
     finish_time = time.clock()
