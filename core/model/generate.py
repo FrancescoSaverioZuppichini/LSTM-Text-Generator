@@ -3,7 +3,7 @@ import tensorflow as tf
 from model import model
 
 
-def generate_from(checkpoint_name, start_text, n_text):
+def generate_from(checkpoint_name, start_text, n_text, layers, eta):
 
     print(checkpoint_name)
 
@@ -11,7 +11,7 @@ def generate_from(checkpoint_name, start_text, n_text):
 
     n_classes = 255
 
-    my_model = model.RNN([512, 512, 512], n_classes, 0.001)
+    my_model = model.RNN(layers, n_classes, eta)
 
     my_model.build()
 
