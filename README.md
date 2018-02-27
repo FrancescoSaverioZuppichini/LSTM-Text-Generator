@@ -8,8 +8,9 @@ Be use you have Tensorflow installed. Download the checkpoints here from `./core
 To use a trained model:
 
 ```
-python3 main.py --generate=True --from_model='shakespeare' --n_text=1000 --start_text="SIR "
+python3 main.py --generate=True --from_model='shakespeare' --n_text=1000 --start_text="SIR " --layers=512,512
 ```
+**For now you also need to pass the EXACTLY number of layers you used to train the model**
 Or visit our **web app** at :
 https://your-shakespeare.herokuapp.com/
 
